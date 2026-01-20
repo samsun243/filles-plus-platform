@@ -102,12 +102,13 @@ export default function Team() {
                     key={member.id}
                     className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
                   >
-                    <div className="relative h-64 overflow-hidden rounded-t-lg">
+                    <div className="relative h-64 overflow-hidden rounded-t-lg bg-gray-50 flex items-center justify-center">
                       <Image
                         src={member.image}
                         alt={member.name}
-                        fill
-                        className="object-top transition-transform duration-300"
+                        width={200}
+                        height={250}
+                        className="object-contain rounded-t-lg"
                       />
                     </div>
                     <div className="p-6">
@@ -131,12 +132,13 @@ export default function Team() {
                     key={member.id}
                     className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
                   >
-                    <div className="relative h-64 overflow-hidden rounded-t-lg">
+                    <div className="relative h-64 overflow-hidden rounded-t-lg bg-gray-50 flex items-center justify-center">
                       <Image
                         src={member.image}
                         alt={member.name}
-                        fill
-                        className="object-top transition-transform duration-300"
+                        width={200}
+                        height={250}
+                        className="object-contain rounded-t-lg"
                       />
                     </div>
                     <div className="p-6">
@@ -160,12 +162,13 @@ export default function Team() {
                     key={member.id}
                     className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
                   >
-                    <div className="relative h-64 overflow-hidden rounded-t-lg">
+                    <div className="relative h-64 overflow-hidden rounded-t-lg bg-gray-50 flex items-center justify-center">
                       <Image
                         src={member.image}
                         alt={member.name}
-                        fill
-                        className="object-top transition-transform duration-300"
+                        width={200}
+                        height={250}
+                        className="object-contain rounded-t-lg"
                       />
                     </div>
                     <div className="p-6">
