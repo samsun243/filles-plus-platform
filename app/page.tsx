@@ -10,6 +10,11 @@ import ValueCard from '@/components/ValueCard';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Target, Eye, Zap, Heart, Sparkles, ArrowRight } from 'lucide-react';
+// Nouveaux composants professionnels
+import FadeInSection from '@/components/FadeInSection';
+import AnimatedCounter from '@/components/AnimatedCounter';
+import StatsGrid from '@/components/StatsGrid';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export default function Home() {
   const featuredProjects = projects.slice(0, 3);
@@ -80,18 +85,24 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* Stats */}
+              {/* Stats Animées */}
               <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-3 sm:gap-8">
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">5000+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
+                    <AnimatedCounter end={5000} suffix="+" />
+                  </div>
                   <div className="text-gray-700 text-xs sm:text-sm">Filles autonomisées</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">15+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
+                    <AnimatedCounter end={15} suffix="+" />
+                  </div>
                   <div className="text-gray-700 text-xs sm:text-sm">Projets actifs</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">30+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
+                    <AnimatedCounter end={30} suffix="+" />
+                  </div>
                   <div className="text-gray-700 text-xs sm:text-sm">Partenaires</div>
                 </div>
               </div>
@@ -145,6 +156,58 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Impact Statistics Section - Nouveau composant professionnel */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <FadeInSection>
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">Notre Impact Chiffré</h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Des résultats concrets qui témoignent de notre engagement quotidien.
+                </p>
+              </div>
+
+              <StatsGrid
+                stats={[
+                  {
+                    id: 'girls-educated',
+                    title: 'Filles formées',
+                    value: 5000,
+                    suffix: '+',
+                    description: 'Éducation et autonomisation',
+                    color: 'rose'
+                  },
+                  {
+                    id: 'communities',
+                    title: 'Communautés',
+                    value: 25,
+                    suffix: '+',
+                    description: 'Impactées positivement',
+                    color: 'blue'
+                  },
+                  {
+                    id: 'projects',
+                    title: 'Projets',
+                    value: 15,
+                    suffix: '+',
+                    description: 'En cours ou terminés',
+                    color: 'green'
+                  },
+                  {
+                    id: 'partners',
+                    title: 'Partenaires',
+                    value: 30,
+                    suffix: '+',
+                    description: 'Organisations engagées',
+                    color: 'purple'
+                  }
+                ]}
+                columns={4}
+              />
+            </FadeInSection>
+          </div>
+        </section>
+
         {/* Nos Valeurs */}
         <section className="py-12 sm:py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -161,6 +224,46 @@ export default function Home() {
                 <ValueCard key={idx} value={value} />
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Témoignages - Nouveau composant professionnel */}
+        <section className="py-20 bg-gradient-to-b from-rose-50 to-pink-50">
+          <div className="container mx-auto px-4">
+            <FadeInSection>
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">Témoignages</h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Découvrez l'impact de nos programmes à travers les voix de celles qui en bénéficient.
+                </p>
+              </div>
+
+              <TestimonialCarousel
+                testimonials={[
+                  {
+                    id: 1,
+                    name: 'Marie Kounarou',
+                    role: 'Bénéficiaire du programme Éducation',
+                    content: 'Grâce à FILLES+, j\'ai pu reprendre mes études et réaliser mon rêve de devenir enseignante. Cette organisation m\'a donné les moyens de croire en moi.',
+                    image: '/images/testimonials/marie.jpg'
+                  },
+                  {
+                    id: 2,
+                    name: 'Clarisse Mensah',
+                    role: 'Jeune entrepreneur',
+                    content: 'Le programme d\'autonomisation financière m\'a permis de lancer ma petite entreprise. Aujourd\'hui, j\'emploie 3 personnes dans mon village.',
+                    image: '/images/testimonials/clarisse.jpg'
+                  },
+                  {
+                    id: 3,
+                    name: 'Sophie Bernard',
+                    role: 'Coordinatrice communautaire',
+                    content: 'FILLES+ a transformé notre communauté. Les filles sont plus confiantes, plus éduquées, et prêtes à prendre leur avenir en main.',
+                    image: '/images/testimonials/sophie.jpg'
+                  }
+                ]}
+              />
+            </FadeInSection>
           </div>
         </section>
 
