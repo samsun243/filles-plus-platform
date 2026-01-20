@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import PartnerCard from '@/components/PartnerCard';
 import { partners, partnerTypeLabels } from '@/data/partners';
 import { Sparkles, Zap, Lightbulb, Users, DollarSign } from 'lucide-react';
@@ -10,6 +11,12 @@ export default function Partners() {
   return (
     <>
       <Header />
+      <Breadcrumb
+        items={[
+          { label: 'Accueil', href: '/' },
+          { label: 'Partenaires', href: '/partners' }
+        ]}
+      />
       <main className="overflow-hidden">
         {/* Page Hero */}
         <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">

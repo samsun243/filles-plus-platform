@@ -2,6 +2,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import { orgConfig } from '@/config/org';
 import { FormEvent, useState } from 'react';
 import { Card } from '@/components/ui/card';
@@ -105,6 +106,12 @@ export default function Contact() {
   return (
     <>
       <Header />
+      <Breadcrumb
+        items={[
+          { label: 'Accueil', href: '/' },
+          { label: 'Contact', href: '/contact' }
+        ]}
+      />
       <main className="overflow-hidden">
         {/* Hero Section */}
         <section className="relative min-h-[50vh] flex items-center overflow-hidden py-12 sm:py-0">

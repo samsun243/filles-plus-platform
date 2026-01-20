@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import NewsCard from '@/components/NewsCard';
 import { news, categoryLabels } from '@/data/news';
 import { Card } from '@/components/ui/card';
@@ -13,6 +14,12 @@ export default function News() {
   return (
     <>
       <Header />
+      <Breadcrumb
+        items={[
+          { label: 'Accueil', href: '/' },
+          { label: 'Actualités', href: '/news' }
+        ]}
+      />
       <main className="overflow-hidden">
         {/* Page Hero */}
         <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">

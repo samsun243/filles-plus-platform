@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import ValueCard from '@/components/ValueCard';
 import { orgConfig } from '@/config/org';
 import { Card } from '@/components/ui/card';
@@ -18,6 +19,12 @@ export default function About() {
   return (
     <>
       <Header />
+      <Breadcrumb
+        items={[
+          { label: 'Accueil', href: '/' },
+          { label: 'À propos', href: '/about' }
+        ]}
+      />
       <main className="overflow-hidden">
         {/* Page Hero */}
         <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">

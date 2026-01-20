@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Card } from '@/components/ui/card';
 import { Sparkles, Image as ImageIcon, Play } from 'lucide-react';
 
@@ -22,6 +23,12 @@ export default function Gallery() {
   return (
     <>
       <Header />
+      <Breadcrumb
+        items={[
+          { label: 'Accueil', href: '/' },
+          { label: 'Galerie', href: '/gallery' }
+        ]}
+      />
       <main className="overflow-hidden">
         {/* Page Hero */}
         <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">
