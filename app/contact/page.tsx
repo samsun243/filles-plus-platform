@@ -6,7 +6,7 @@ import { orgConfig } from '@/config/org';
 import { FormEvent, useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Send, CheckCircle, Sparkles, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, Sparkles, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -229,25 +229,25 @@ export default function Contact() {
                     {orgConfig.contact.socialMedia.facebook && (
                       <a href={orgConfig.contact.socialMedia.facebook} target="_blank" rel="noopener noreferrer"
                         className="w-12 h-12 bg-gradient-to-br from-rose-600 to-pink-600 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:scale-110">
-                        <span className="text-lg">f</span>
+                        <Facebook size={20} />
                       </a>
                     )}
                     {orgConfig.contact.socialMedia.twitter && (
                       <a href={orgConfig.contact.socialMedia.twitter} target="_blank" rel="noopener noreferrer"
                         className="w-12 h-12 bg-gradient-to-br from-pink-600 to-fuchsia-600 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:scale-110">
-                        <span className="text-lg">𝕏</span>
+                        <Twitter size={20} />
                       </a>
                     )}
                     {orgConfig.contact.socialMedia.instagram && (
                       <a href={orgConfig.contact.socialMedia.instagram} target="_blank" rel="noopener noreferrer"
                         className="w-12 h-12 bg-gradient-to-br from-fuchsia-600 to-rose-600 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:scale-110">
-                        <span className="text-lg">📷</span>
+                        <Instagram size={20} />
                       </a>
                     )}
                     {orgConfig.contact.socialMedia.linkedin && (
                       <a href={orgConfig.contact.socialMedia.linkedin} target="_blank" rel="noopener noreferrer"
                         className="w-12 h-12 bg-gradient-to-br from-rose-600 to-pink-600 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:scale-110">
-                        <span className="text-lg">💼</span>
+                        <Linkedin size={20} />
                       </a>
                     )}
                   </div>

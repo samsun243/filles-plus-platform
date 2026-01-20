@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
-import { Sparkles, Users, Crown, UserCheck, Briefcase, Award } from 'lucide-react';
+import { Sparkles, Users, Crown, UserCheck, Briefcase, Award, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 const teamMembers = [
@@ -78,6 +78,20 @@ const teamMembers = [
     role: 'Coordonnateur Communal Akpro - Missérété',
     category: 'Coordonnateurs Communaux',
     image: '/images/équipe/Coordonnateur Communal Akpro - Missérété.jpg'
+  },
+  {
+    id: 11,
+    name: 'A. Alexis SOGNIGBE',
+    role: 'Coordonnateur Porto-Novo',
+    category: 'Coordonnateurs Communaux',
+    image: '/images/équipe/Coordonnateur Porto-Novo.jpg'
+  },
+  {
+    id: 12,
+    name: 'ADEGBOLA Armelle',
+    role: 'Coordonnateur Adja Ouèrè',
+    category: 'Coordonnateurs Communaux',
+    image: '/images/équipe/Coordonnateur Adja Ouèrè.jpg'
   }
 ];
 
@@ -120,31 +134,30 @@ export default function Team() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {teamMembers.filter(member => member.category === 'Bureau Exécutif').map((member) => (
-                  <Card
-                    key={member.id}
-                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
-                  >
+                  <div className="card bg-base-100/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 border-0 hover:border-primary/20 border-2 group">
                     <figure className="px-6 pt-6">
-                      <div className="avatar">
-                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
+                      <div className="avatar group-hover:ring-4 ring-primary/30 transition-all duration-300">
+                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center shadow-lg">
                           <Image
                             src={member.image}
                             alt={member.name}
                             width={120}
                             height={120}
-                            className="object-contain"
+                            className="object-contain group-hover:scale-110 transition-transform duration-300"
                           />
                         </div>
                       </div>
                     </figure>
                     <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">{member.name}</h3>
+                      <div className="badge badge-primary badge-outline mb-3 hover:badge-primary transition-all duration-300 cursor-help" title={`Rôle: ${member.role}`}>
+                        {member.role}
+                      </div>
                       <div className="card-actions justify-center">
-                        <div className="badge badge-ghost badge-sm">{member.category}</div>
+                        <div className="badge badge-ghost badge-sm hover:badge-accent transition-all duration-300">{member.category}</div>
                       </div>
                     </div>
-                  </Card>
+                  </div>
                 ))}
               </div>
             </div>
@@ -257,6 +270,66 @@ export default function Team() {
                     </div>
                   </Card>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Impact Statistics Section */}
+        <section className="py-12 sm:py-20 bg-gradient-to-r from-rose-50 via-pink-50 to-fuchsia-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Notre Impact Collectif</h2>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                Ensemble, nous transformons des vies et bâtissons un avenir meilleur pour les filles du Bénin
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+                <div className="stat-figure text-primary mb-2">
+                  <Users className="w-8 h-8" />
+                </div>
+                <div className="stat-value text-2xl font-bold text-primary">5000+</div>
+                <div className="stat-title text-sm font-semibold">Filles autonomisées</div>
+                <div className="stat-desc text-xs text-gray-600 mt-1">Depuis 2025</div>
+              </div>
+
+              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+                <div className="stat-figure text-secondary mb-2">
+                  <Briefcase className="w-8 h-8" />
+                </div>
+                <div className="stat-value text-2xl font-bold text-secondary">15+</div>
+                <div className="stat-title text-sm font-semibold">Projets actifs</div>
+                <div className="stat-desc text-xs text-gray-600 mt-1">Dans tout le Bénin</div>
+              </div>
+
+              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+                <div className="stat-figure text-accent mb-2">
+                  <Award className="w-8 h-8" />
+                </div>
+                <div className="stat-value text-2xl font-bold text-accent">30+</div>
+                <div className="stat-title text-sm font-semibold">Partenaires</div>
+                <div className="stat-desc text-xs text-gray-600 mt-1">Institutions & ONG</div>
+              </div>
+
+              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+                <div className="stat-figure text-primary mb-2">
+                  <MapPin className="w-8 h-8" />
+                </div>
+                <div className="stat-value text-2xl font-bold text-primary">12</div>
+                <div className="stat-title text-sm font-semibold">Communes</div>
+                <div className="stat-desc text-xs text-gray-600 mt-1">Couvertes</div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="alert alert-success shadow-lg max-w-md mx-auto">
+                <Sparkles className="w-6 h-6" />
+                <span className="font-semibold">Rejoignez notre mission !</span>
+                <div>
+                  <span className="text-sm">Chaque membre compte pour transformer des vies</span>
+                </div>
               </div>
             </div>
           </div>
