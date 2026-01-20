@@ -18,7 +18,16 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [newsletterEmail, setNewsletterEmail] = useState('');
-  const [subscribedEmails, setSubscribedEmails] = useState<string[]>(['sarah.dupont@email.com', 'marie.martin@email.com', 'amina.kone@email.com', 'fatou.diallo@email.com', 'zara.benali@email.com']);
+  const [subscribedEmails, setSubscribedEmails] = useState<string[]>([
+    'jeanpaulde@gmail.com',
+    'ulrichwo@yahoo.com',
+    'charbelvi@outlook.com',
+    'chrisroi@gmail.com',
+    'amourag@yahoo.com',
+    'orphelia@outlook.com',
+    'samlk@gmail.com',
+    'sunsam@yahoo.com'
+  ]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [newsletterSubmitting, setNewsletterSubmitting] = useState(false);
 
