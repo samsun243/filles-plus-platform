@@ -56,6 +56,28 @@ const teamMembers = [
     role: 'Président de la Commission Développement Durable et Innovation',
     category: 'Présidents de Commission',
     image: '/images/équipe/Président de la Commission Développement Durable et Innovation.jpg'
+  },
+  // Nouveaux membres
+  {
+    id: 8,
+    name: 'Alice SARA KPERA',
+    role: 'Présidente de la Commission Hygiène et Santé',
+    category: 'Présidents de Commission',
+    image: '/images/équipe/Présidente de la Commission Hygiène et Santé.jpg'
+  },
+  {
+    id: 9,
+    name: 'Z. Pacôme GBEDINHESSI',
+    role: 'Président Commission Éducation',
+    category: 'Présidents de Commission',
+    image: '/images/équipe/Président Commission Éducation.jpg'
+  },
+  {
+    id: 10,
+    name: 'Codjo Mathieu CAKPO',
+    role: 'Coordonnateur Communal Akpro - Missérété',
+    category: 'Coordonnateurs Communaux',
+    image: '/images/équipe/Coordonnateur Communal Akpro - Missérété.jpg'
   }
 ];
 
@@ -100,20 +122,27 @@ export default function Team() {
                 {teamMembers.filter(member => member.category === 'Bureau Exécutif').map((member) => (
                   <Card
                     key={member.id}
-                    className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
+                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
                   >
-                    <div className="relative h-64 overflow-hidden rounded-t-lg bg-gray-50 flex items-center justify-center">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        width={200}
-                        height={250}
-                        className="object-contain rounded-t-lg"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
-                      <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
+                    <figure className="px-6 pt-6">
+                      <div className="avatar">
+                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={120}
+                            height={120}
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+                    </figure>
+                    <div className="card-body items-center text-center p-6">
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
+                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
+                      <div className="card-actions justify-center">
+                        <div className="badge badge-ghost badge-sm">{member.category}</div>
+                      </div>
                     </div>
                   </Card>
                 ))}
@@ -130,20 +159,27 @@ export default function Team() {
                 {teamMembers.filter(member => member.category === 'Chargés de Mission').map((member) => (
                   <Card
                     key={member.id}
-                    className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
+                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
                   >
-                    <div className="relative h-64 overflow-hidden rounded-t-lg bg-gray-50 flex items-center justify-center">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        width={200}
-                        height={250}
-                        className="object-contain rounded-t-lg"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
-                      <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
+                    <figure className="px-6 pt-6">
+                      <div className="avatar">
+                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={120}
+                            height={120}
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+                    </figure>
+                    <div className="card-body items-center text-center p-6">
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
+                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
+                      <div className="card-actions justify-center">
+                        <div className="badge badge-ghost badge-sm">{member.category}</div>
+                      </div>
                     </div>
                   </Card>
                 ))}
@@ -160,20 +196,64 @@ export default function Team() {
                 {teamMembers.filter(member => member.category === 'Présidents de Commission').map((member) => (
                   <Card
                     key={member.id}
-                    className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
+                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
                   >
-                    <div className="relative h-64 overflow-hidden rounded-t-lg bg-gray-50 flex items-center justify-center">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        width={200}
-                        height={250}
-                        className="object-contain rounded-t-lg"
-                      />
+                    <figure className="px-6 pt-6">
+                      <div className="avatar">
+                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={120}
+                            height={120}
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+                    </figure>
+                    <div className="card-body items-center text-center p-6">
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
+                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
+                      <div className="card-actions justify-center">
+                        <div className="badge badge-ghost badge-sm">{member.category}</div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
-                      <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Coordonnateurs Communaux */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-8">
+                <MapPin className="w-8 h-8 text-rose-600" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Coordonnateurs Communaux</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                {teamMembers.filter(member => member.category === 'Coordonnateurs Communaux').map((member) => (
+                  <Card
+                    key={member.id}
+                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
+                  >
+                    <figure className="px-6 pt-6">
+                      <div className="avatar">
+                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={120}
+                            height={120}
+                            className="object-contain"
+                          />
+                        </div>
+                      </div>
+                    </figure>
+                    <div className="card-body items-center text-center p-6">
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
+                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
+                      <div className="card-actions justify-center">
+                        <div className="badge badge-ghost badge-sm">{member.category}</div>
+                      </div>
                     </div>
                   </Card>
                 ))}
@@ -195,16 +275,27 @@ export default function Team() {
                 a accès aux opportunités d'éducation, de santé et de leadership qui lui permet de réaliser son plein potentiel.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                {[
-                  { title: 'Dévouement', desc: 'Engagement total envers la mission' },
-                  { title: 'Empathie', desc: 'Écoute et soutien aux filles' },
-                  { title: 'Excellence', desc: 'Qualité en toutes nos actions' }
-                ].map((value, idx) => (
-                  <Card key={idx} className="border-2 border-rose-200 p-4">
-                    <h4 className="font-bold text-gray-900 mb-2">{value.title}</h4>
-                    <p className="text-sm text-gray-700">{value.desc}</p>
-                  </Card>
-                ))}
+                <div className="stat bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-4">
+                  <div className="stat-figure text-primary">
+                    <Sparkles className="inline-block w-8 h-8 stroke-current" />
+                  </div>
+                  <div className="stat-title">Dévouement</div>
+                  <div className="stat-desc text-primary">Engagement total envers la mission</div>
+                </div>
+                <div className="stat bg-gradient-to-br from-pink-50 to-fuchsia-50 rounded-lg p-4">
+                  <div className="stat-figure text-secondary">
+                    <Users className="inline-block w-8 h-8 stroke-current" />
+                  </div>
+                  <div className="stat-title">Empathie</div>
+                  <div className="stat-desc text-secondary">Écoute et soutien aux filles</div>
+                </div>
+                <div className="stat bg-gradient-to-br from-fuchsia-50 to-rose-50 rounded-lg p-4">
+                  <div className="stat-figure text-accent">
+                    <Award className="inline-block w-8 h-8 stroke-current" />
+                  </div>
+                  <div className="stat-title">Excellence</div>
+                  <div className="stat-desc text-accent">Qualité en toutes nos actions</div>
+                </div>
               </div>
             </div>
           </div>
