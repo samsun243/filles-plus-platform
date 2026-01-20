@@ -102,12 +102,12 @@ export default function Team() {
                     key={member.id}
                     className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
                   >
-                    <div className="relative h-64 overflow-hidden">
+                    <div className="relative h-64 overflow-hidden rounded-t-lg">
                       <Image
                         src={member.image}
                         alt={member.name}
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="object-top transition-transform duration-300"
                       />
                     </div>
                     <div className="p-6">
@@ -131,12 +131,12 @@ export default function Team() {
                     key={member.id}
                     className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
                   >
-                    <div className="relative h-64 overflow-hidden">
+                    <div className="relative h-64 overflow-hidden rounded-t-lg">
                       <Image
                         src={member.image}
                         alt={member.name}
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="object-top transition-transform duration-300"
                       />
                     </div>
                     <div className="p-6">
@@ -160,12 +160,12 @@ export default function Team() {
                     key={member.id}
                     className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
                   >
-                    <div className="relative h-64 overflow-hidden">
+                    <div className="relative h-64 overflow-hidden rounded-t-lg">
                       <Image
                         src={member.image}
                         alt={member.name}
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="object-top transition-transform duration-300"
                       />
                     </div>
                     <div className="p-6">

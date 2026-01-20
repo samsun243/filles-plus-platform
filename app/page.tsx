@@ -83,16 +83,16 @@ export default function Home() {
               {/* Stats */}
               <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-3 sm:gap-8">
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">5000+</div>
-                  <div className="text-white/80 text-xs sm:text-sm">Filles autonomisées</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">5000+</div>
+                  <div className="text-gray-700 text-xs sm:text-sm">Filles autonomisées</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">15+</div>
-                  <div className="text-white/80 text-xs sm:text-sm">Projets actifs</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">15+</div>
+                  <div className="text-gray-700 text-xs sm:text-sm">Projets actifs</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">30+</div>
-                  <div className="text-white/80 text-xs sm:text-sm">Partenaires</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">30+</div>
+                  <div className="text-gray-700 text-xs sm:text-sm">Partenaires</div>
                 </div>
               </div>
             </div>
