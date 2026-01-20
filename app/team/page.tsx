@@ -1,51 +1,62 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
-import { Sparkles, Users, UserCheck, Briefcase, GraduationCap, Heart, MonitorSpeaker, Calculator } from 'lucide-react';
+import { Sparkles, Users, Crown, UserCheck, Briefcase, Award } from 'lucide-react';
+import Image from 'next/image';
 
 const teamMembers = [
+  // Bureau Exécutif
   {
     id: 1,
-    name: 'Marie Kounarou',
-    role: 'Directrice Générale',
-    bio: 'Passionnée par l\'autonomisation des femmes avec 15 ans d\'expérience',
-    icon: UserCheck
+    name: 'M. Adéotan Jean-Paul ADEBOLOU',
+    role: 'Directeur Exécutif',
+    category: 'Bureau Exécutif',
+    image: '/images/équipe/Directeur Exécutif.jpg'
   },
   {
     id: 2,
-    name: 'Amma Traore',
-    role: 'Coordinatrice des Projets',
-    bio: 'Experte en gestion de projets d\'impact social au Bénin',
-    icon: Briefcase
+    name: 'Monsieur Sègla Firmin HINDENOU',
+    role: 'Secrétaire Exécutif',
+    category: 'Bureau Exécutif',
+    image: '/images/équipe/Secrétaire Exécutif.jpg'
   },
   {
     id: 3,
-    name: 'Fatima Diallo',
-    role: 'Responsable Formation',
-    bio: 'Éducatrice dédiée aux programmes de leadership féminin',
-    icon: GraduationCap
+    name: 'Mme Fifamè Alphonsine AHLONSOU',
+    role: 'Trésorière Exécutive',
+    category: 'Bureau Exécutif',
+    image: '/images/équipe/Trésorière Exécutif.jpg'
   },
+  // Chargés de mission
   {
     id: 4,
-    name: 'Clarisse Mensah',
-    role: 'Responsable Santé',
-    bio: 'Infirmière avec spécialisation en santé féminine',
-    icon: Heart
+    name: 'Sébastien ZANNOU',
+    role: 'Chargé de programme',
+    category: 'Chargés de Mission',
+    image: '/images/équipe/Chargé de programme.jpg'
   },
   {
     id: 5,
-    name: 'Jade Osei',
-    role: 'Coordinatrice Communication',
-    bio: 'Spécialiste en communication et marketing social',
-    icon: MonitorSpeaker
+    name: 'SARE Kadydjath',
+    role: 'Chargée des Partenariats et des Relations Extérieures',
+    category: 'Chargés de Mission',
+    image: '/images/équipe/Chargée des Partenariats et des Relations Extérieures.jpg'
   },
+  // Présidents de commission
   {
     id: 6,
-    name: 'Sophie Bernard',
-    role: 'Trésorière',
-    bio: 'Experte en gestion financière des organisations NGO',
-    icon: Calculator
+    name: 'Chrytilla TCHANHOUN',
+    role: 'Présidente de la Commission Jeunesse Sport et Leadership',
+    category: 'Présidents de Commission',
+    image: '/images/équipe/Présidente de la Commission Jeunesse Sport et Leadership.jpg'
   },
+  {
+    id: 7,
+    name: 'WANDJI Hermann',
+    role: 'Président de la Commission Développement Durable et Innovation',
+    category: 'Présidents de Commission',
+    image: '/images/équipe/Président de la Commission Développement Durable et Innovation.jpg'
+  }
 ];
 
 export default function Team() {
@@ -68,10 +79,10 @@ export default function Team() {
               <span className="text-rose-700 font-bold text-sm">Notre Équipe</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
-              Les Femmes <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Derrière l'Impact</span>
+              L'Équipe <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
-              Décourez l'équipe dévouée qui transforme des vies au quotidien.
+              Découvrez l'équipe dévouée qui transforme des vies au quotidien.
             </p>
           </div>
         </section>
@@ -79,22 +90,91 @@ export default function Team() {
         {/* Team Grid */}
         <section className="py-12 sm:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-              {teamMembers.map((member) => (
-                <Card
-                  key={member.id}
-                  className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
-                >
-                  <div className="h-40 bg-gradient-to-br from-rose-100 to-pink-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <member.icon className="w-16 h-16 text-rose-600" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
-                    <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
-                    <p className="text-gray-700 text-sm leading-relaxed">{member.bio}</p>
-                  </div>
-                </Card>
-              ))}
+            {/* Bureau Exécutif */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-8">
+                <Crown className="w-8 h-8 text-rose-600" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Bureau Exécutif</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                {teamMembers.filter(member => member.category === 'Bureau Exécutif').map((member) => (
+                  <Card
+                    key={member.id}
+                    className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
+                  >
+                    <div className="relative h-64 overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                      <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Chargés de Mission */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-8">
+                <UserCheck className="w-8 h-8 text-rose-600" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Chargés de Mission</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                {teamMembers.filter(member => member.category === 'Chargés de Mission').map((member) => (
+                  <Card
+                    key={member.id}
+                    className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
+                  >
+                    <div className="relative h-64 overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                      <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* Présidents de Commission */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-8">
+                <Award className="w-8 h-8 text-rose-600" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Présidents de Commission</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                {teamMembers.filter(member => member.category === 'Présidents de Commission').map((member) => (
+                  <Card
+                    key={member.id}
+                    className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden group"
+                  >
+                    <div className="relative h-64 overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
+                      <p className="text-sm font-semibold text-rose-600 mb-3">{member.role}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
