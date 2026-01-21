@@ -4,6 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { Card } from '@/components/ui/card';
 import { Sparkles, Users, Crown, UserCheck, Briefcase, Award, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import TeamAvatar from '@/components/TeamAvatar';
 
 const teamMembers = [
   // Bureau Exécutif
@@ -152,13 +153,7 @@ export default function Team() {
                     <figure className="px-6 pt-6">
                       <div className="avatar group-hover:ring-4 ring-primary/30 transition-all duration-300">
                         <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center shadow-lg">
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={120}
-                            height={120}
-                            className="object-contain group-hover:scale-110 transition-transform duration-300"
-                          />
+                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
                         </div>
                       </div>
                     </figure>
@@ -191,13 +186,7 @@ export default function Team() {
                     <figure className="px-6 pt-6">
                       <div className="avatar">
                         <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={120}
-                            height={120}
-                            className="object-contain"
-                          />
+                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
                         </div>
                       </div>
                     </figure>
@@ -228,13 +217,7 @@ export default function Team() {
                     <figure className="px-6 pt-6">
                       <div className="avatar">
                         <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={120}
-                            height={120}
-                            className="object-contain"
-                          />
+                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
                         </div>
                       </div>
                     </figure>
@@ -265,13 +248,7 @@ export default function Team() {
                     <figure className="px-6 pt-6">
                       <div className="avatar">
                         <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={120}
-                            height={120}
-                            className="object-contain"
-                          />
+                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
                         </div>
                       </div>
                     </figure>
