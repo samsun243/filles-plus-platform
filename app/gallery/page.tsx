@@ -44,10 +44,10 @@ export default function Gallery() {
               <Sparkles size={18} className="text-rose-600" />
               <span className="text-rose-700 font-bold text-sm">Notre Galerie</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-gray-100 mb-6">
               Galerie de <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Moments</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               Découvrez nos actions en images. Les moments qui changent des vies.
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function Gallery() {
                     <span className="inline-block text-xs font-bold bg-rose-100 text-rose-700 px-3 py-1 rounded-full mb-2">
                       {item.category}
                     </span>
-                    <h3 className="text-sm sm:text-base font-bold text-gray-900">{item.title}</h3>
+                    <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-gray-100">{item.title}</h3>
                   </div>
                 </Card>
               ))}
@@ -85,13 +85,13 @@ export default function Gallery() {
               <Card className="border-2 border-rose-200 bg-gradient-to-br from-rose-50 to-pink-50 p-8">
                 <div className="flex gap-4 mb-6">
                   <ImageIcon size={32} className="text-rose-600 flex-shrink-0" />
-                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 self-center">Notre Galerie</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 self-center">Notre Galerie</h2>
                 </div>
-                <p className="text-gray-700 mb-4 text-base sm:text-lg">
+                <p className="text-gray-700 dark:text-gray-300 mb-4 text-base sm:text-lg">
                   La galerie de photos de l'ONG FILLES+ montre la diversité de nos activités
                   et l'impact tangible de nos actions auprès des filles et jeunes femmes du Bénin.
                 </p>
-                <p className="text-gray-700 text-base sm:text-lg">
+                <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
                   Pour accéder à notre galerie complète avec vidéos HD et photos haute résolution,
                   <span className="font-semibold text-rose-600"> consultez nos réseaux sociaux</span> ou 
                   <span className="font-semibold text-rose-600"> contactez-nous directement</span>.
@@ -105,7 +105,7 @@ export default function Gallery() {
         <section className="py-12 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Vidéos Récentes</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Vidéos Récentes</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">Regardez nos dernières vidéos d'impact et de témoignages</p>
             </div>
 
@@ -116,7 +116,7 @@ export default function Gallery() {
                     <Play size={64} className="text-white opacity-75 group-hover:opacity-100 transition" fill="white" />
                   </div>
                   <div className="p-6">
-                    <h3 className="font-bold text-gray-900 mb-2 text-lg">Vidéo {i}: Nos initiatives en action</h3>
+                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-2 text-lg">Vidéo {i}: Nos initiatives en action</h3>
                     <p className="text-sm text-gray-600">
                       Découvrez l'impact de notre travail auprès des filles du Bénin.
                     </p>

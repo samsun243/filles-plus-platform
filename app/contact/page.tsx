@@ -123,10 +123,10 @@ export default function Contact() {
           </div>
 
           <div className="relative container mx-auto px-4 z-10 text-center py-16 sm:py-20">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-gray-100 mb-6">
               Restez <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">en contact</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               Des questions? Nous sommes là pour vous aider. Contactez-nous et explorons ensemble comment soutenir notre mission.
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
               {/* Contact Info Cards */}
               <div>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Informations</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8">Informations</h2>
 
                 <div className="space-y-6">
                   {/* Email Card */}
@@ -148,7 +148,7 @@ export default function Contact() {
                         <Mail className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                        <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-1">Email</h3>
                         <a href={`mailto:${orgConfig.contact.email}`} className="text-rose-600 hover:text-rose-700 font-semibold transition">
                           {orgConfig.contact.email}
                         </a>
@@ -163,7 +163,7 @@ export default function Contact() {
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-gray-900 mb-1">Téléphone</h3>
+                        <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-1">Téléphone</h3>
                         <a href={`tel:${orgConfig.contact.phone}`} className="text-pink-600 hover:text-pink-700 font-semibold transition">
                           {orgConfig.contact.phone}
                         </a>
@@ -173,13 +173,13 @@ export default function Contact() {
 
                   {/* Horaires */}
                   <Card className="border-0 shadow-lg p-6 bg-white border-2 border-rose-100">
-                    <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2">
                       <Clock className="w-6 h-6 text-rose-600" /> Horaires d'ouverture
                     </h3>
                     <div className="space-y-2 text-sm">
-                      <p className="text-gray-700"><span className="font-semibold">Lun-Ven:</span> 8h00 - 17h00</p>
-                      <p className="text-gray-700"><span className="font-semibold">Samedi:</span> 9h00 - 13h00</p>
-                      <p className="text-gray-700"><span className="font-semibold">Dimanche:</span> <span className="text-rose-600 font-semibold">Fermé</span></p>
+                      <p className="text-gray-700 dark:text-gray-300"><span className="font-semibold">Lun-Ven:</span> 8h00 - 17h00</p>
+                      <p className="text-gray-700 dark:text-gray-300"><span className="font-semibold">Samedi:</span> 9h00 - 13h00</p>
+                      <p className="text-gray-700 dark:text-gray-300"><span className="font-semibold">Dimanche:</span> <span className="text-rose-600 font-semibold">Fermé</span></p>
                     </div>
                   </Card>
                 </div>
@@ -187,10 +187,10 @@ export default function Contact() {
                 {/* Newsletter Subscription */}
                 <div className="mt-8">
                   <Card className="border-0 shadow-lg p-6 bg-gradient-to-br from-rose-50 to-pink-50">
-                    <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2">
                       <Mail className="w-6 h-6 text-rose-600" /> Newsletter FILLES+
                     </h3>
-                    <p className="text-gray-700 mb-4">Restez informé(e) de nos actions et programmes pour l'émancipation des filles.</p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-4">Restez informé(e) de nos actions et programmes pour l'émancipation des filles.</p>
                     <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                       <input
                         type="email"
@@ -211,7 +211,7 @@ export default function Contact() {
                 {/* Subscribed Emails Display */}
                 <div className="mt-6">
                   <Card className="border-0 shadow-lg p-6 bg-white">
-                    <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2">
                       <Sparkles className="w-6 h-6 text-rose-600" /> Nos abonné(e)s récent(e)s
                     </h3>
                     <p className="text-gray-600 mb-4 text-sm">Découvrez qui nous suit dans notre mission :</p>
@@ -219,7 +219,7 @@ export default function Contact() {
                       {subscribedEmails.slice(-10).map((email, index) => (
                         <div key={index} className="flex items-center gap-2 p-2 bg-gradient-to-r from-rose-50 to-pink-50 rounded-lg">
                           <Mail className="w-4 h-4 text-rose-600 flex-shrink-0" />
-                          <span className="text-sm text-gray-700 truncate">{email}</span>
+                          <span className="text-sm text-gray-700 dark:text-gray-300 truncate">{email}</span>
                         </div>
                       ))}
                     </div>
@@ -231,7 +231,7 @@ export default function Contact() {
 
                 {/* Social Media */}
                 <div className="mt-8">
-                  <h3 className="font-bold text-gray-900 mb-4">Réseaux sociaux</h3>
+                  <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-4">Réseaux sociaux</h3>
                   <div className="flex gap-3 flex-wrap">
                     {orgConfig.contact.socialMedia.facebook && (
                       <a href={orgConfig.contact.socialMedia.facebook} target="_blank" rel="noopener noreferrer"
@@ -264,7 +264,7 @@ export default function Contact() {
               {/* Contact Form Premium */}
               <div>
                 <Card className="border-0 shadow-2xl p-8 bg-white">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Envoyez-nous un message</h2>
+                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Envoyez-nous un message</h2>
                   <p className="text-gray-600 mb-6">Réponse rapide garantie en 24h</p>
 
                   {submitted && (
@@ -279,7 +279,7 @@ export default function Contact() {
 
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-bold text-gray-900 mb-2">
+                      <label htmlFor="name" className="block text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">
                         Nom complet *
                       </label>
                       <input
@@ -296,7 +296,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-bold text-gray-900 mb-2">
+                      <label htmlFor="email" className="block text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">
                         Adresse email *
                       </label>
                       <input
@@ -313,7 +313,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="type" className="block text-sm font-bold text-gray-900 mb-2">
+                      <label htmlFor="type" className="block text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">
                         Type de message *
                       </label>
                       <select
@@ -334,7 +334,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-bold text-gray-900 mb-2">
+                      <label htmlFor="subject" className="block text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">
                         Sujet *
                       </label>
                       <input
@@ -351,7 +351,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-bold text-gray-900 mb-2">
+                      <label htmlFor="message" className="block text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">
                         Message *
                       </label>
                       <textarea

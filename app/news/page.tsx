@@ -41,10 +41,10 @@ export default function News() {
               <Sparkles size={18} className="text-rose-600" />
               <span className="text-rose-700 font-bold text-sm">Actualités</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-gray-100 mb-6">
               Dernières <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Actualités</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               Restez informé des dernières nouvelles et initiatives de l'ONG FILLES+
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function News() {
           <section className="py-12 sm:py-20 bg-white">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">À la Une</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">À la Une</h2>
               </div>
 
               <Card className="border-0 shadow-2xl overflow-hidden max-w-4xl mx-auto">
@@ -77,10 +77,10 @@ export default function News() {
                         {new Date(featuredNews.date).toLocaleDateString('fr-FR')}
                       </span>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
                       {featuredNews.title}
                     </h3>
-                    <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-6 leading-relaxed">
                       {featuredNews.content || featuredNews.description}
                     </p>
                     <Link
@@ -102,7 +102,7 @@ export default function News() {
             {otherNews.length > 0 && (
               <>
                 <div className="text-center mb-12 sm:mb-16">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Autres Actualités</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">Autres Actualités</h2>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
