@@ -300,39 +300,39 @@ export default function Team() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-primary mb-2">
                   <Users className="w-8 h-8" />
                 </div>
                 <div className="stat-value text-2xl font-bold text-primary">5000+</div>
-                <div className="stat-title text-sm font-semibold">Filles autonomisées</div>
+                <div className="stat-title text-sm font-semibold text-gray-900">Filles autonomisées</div>
                 <div className="stat-desc text-xs text-gray-900 mt-1">Depuis 2025</div>
               </div>
 
-              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-secondary mb-2">
                   <Briefcase className="w-8 h-8" />
                 </div>
                 <div className="stat-value text-2xl font-bold text-secondary">15+</div>
-                <div className="stat-title text-sm font-semibold">Projets actifs</div>
+                <div className="stat-title text-sm font-semibold text-gray-900">Projets actifs</div>
                 <div className="stat-desc text-xs text-gray-900 mt-1">Dans tout le Bénin</div>
               </div>
 
-              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-accent mb-2">
                   <Award className="w-8 h-8" />
                 </div>
                 <div className="stat-value text-2xl font-bold text-accent">30+</div>
-                <div className="stat-title text-sm font-semibold">Partenaires</div>
+                <div className="stat-title text-sm font-semibold text-gray-900">Partenaires</div>
                 <div className="stat-desc text-xs text-gray-900 mt-1">Institutions & ONG</div>
               </div>
 
-              <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-primary mb-2">
                   <MapPin className="w-8 h-8" />
                 </div>
                 <div className="stat-value text-2xl font-bold text-primary">12</div>
-                <div className="stat-title text-sm font-semibold">Communes</div>
+                <div className="stat-title text-sm font-semibold text-gray-900">Communes</div>
                 <div className="stat-desc text-xs text-gray-900 mt-1">Couvertes</div>
               </div>
             </div>
@@ -366,22 +366,22 @@ export default function Team() {
                   <div className="stat-figure text-primary">
                     <Sparkles className="inline-block w-8 h-8 stroke-current" />
                   </div>
-                  <div className="stat-title">Dévouement</div>
-                  <div className="stat-desc text-primary">Engagement total envers la mission</div>
+                  <div className="stat-title text-gray-900">Dévouement</div>
+                  <div className="stat-desc text-gray-900">Engagement total envers la mission</div>
                 </div>
                 <div className="stat bg-gradient-to-br from-pink-50 to-fuchsia-50 rounded-lg p-4">
                   <div className="stat-figure text-secondary">
                     <Users className="inline-block w-8 h-8 stroke-current" />
                   </div>
-                  <div className="stat-title">Empathie</div>
-                  <div className="stat-desc text-secondary">Écoute et soutien aux filles</div>
+                  <div className="stat-title text-gray-900">Empathie</div>
+                  <div className="stat-desc text-gray-900">Écoute et soutien aux filles</div>
                 </div>
                 <div className="stat bg-gradient-to-br from-fuchsia-50 to-rose-50 rounded-lg p-4">
                   <div className="stat-figure text-accent">
                     <Award className="inline-block w-8 h-8 stroke-current" />
                   </div>
-                  <div className="stat-title">Excellence</div>
-                  <div className="stat-desc text-accent">Qualité en toutes nos actions</div>
+                  <div className="stat-title text-gray-900">Excellence</div>
+                  <div className="stat-desc text-gray-900">Qualité en toutes nos actions</div>
                 </div>
               </div>
             </div>
