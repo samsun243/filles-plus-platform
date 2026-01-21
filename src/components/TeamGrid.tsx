@@ -28,7 +28,7 @@ export default function TeamGrid({ members, columns = 'grid-cols-1 sm:grid-cols-
             <figure className="px-6 pt-6">
               <button
                 onClick={() => setSelected(member)}
-                className="avatar w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center focus:outline-none focus-visible:ring-4"
+                className="avatar w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center focus:outline-none focus-visible:ring-4 focus-visible:ring-primary/60"
                 aria-label={`${member.name} — ${member.role}`}
               >
                 <TeamAvatar src={member.image} name={member.name} role={member.role} />
