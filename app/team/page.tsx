@@ -108,7 +108,7 @@ const teamMembers = [
     name: 'A. Paul KOSSOLOU',
     role: 'Coordonnateur Kétou',
     category: 'Coordonnateurs Communaux',
-    image: '/images/équipe/A. Paul KOSSOLOU.jpg'
+    image: '/images/équipe/Coordonnateur Kétou.jpg'
   }
 ];
 
