@@ -88,7 +88,7 @@ const teamMembers = [
     image: '/images/équipe/Coordonnateur Communal Akpro - Missérété.jpg'
   },
   {
-    id: 11,
+    id: 13,
     name: 'A. Alexis SOGNIGBE',
     role: 'Coordonnateur Porto-Novo',
     category: 'Coordonnateurs Communaux',
