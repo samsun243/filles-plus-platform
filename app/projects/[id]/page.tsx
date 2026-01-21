@@ -42,7 +42,7 @@ export default async function ProjectDetail({ params }: PageProps) {
               <span>/</span>
               <Link href="/projects" className="text-pink-600 hover:text-pink-700">Projets</Link>
               <span>/</span>
-              <span className="text-gray-600">{project.title}</span>
+              <span className="text-gray-900">{project.title}</span>
             </div>
           </div>
         </section>
@@ -66,11 +66,11 @@ export default async function ProjectDetail({ params }: PageProps) {
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               {/* Info Cards */}
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-sm font-semibold text-gray-600 mb-2">CATÉGORIE</h3>
+                <h3 className="text-sm font-semibold text-gray-900 mb-2">CATÉGORIE</h3>
                 <p className="text-lg font-bold text-gray-800">{categoryNames[project.category]}</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-sm font-semibold text-gray-600 mb-2">STATUT</h3>
+                <h3 className="text-sm font-semibold text-gray-900 mb-2">STATUT</h3>
                 <p className={`text-lg font-bold ${
                   project.status === 'active' ? 'text-green-600' :
                   project.status === 'completed' ? 'text-blue-600' :
@@ -82,7 +82,7 @@ export default async function ProjectDetail({ params }: PageProps) {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-sm font-semibold text-gray-600 mb-2">DATE DE DÉBUT</h3>
+                <h3 className="text-sm font-semibold text-gray-900 mb-2">DATE DE DÉBUT</h3>
                 <p className="text-lg font-bold text-gray-800">
                   {new Date(project.startDate).toLocaleDateString('fr-FR', {
                     year: 'numeric',
@@ -95,14 +95,14 @@ export default async function ProjectDetail({ params }: PageProps) {
             {/* Content */}
             <div className="bg-white rounded-lg shadow-md p-8 mb-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Description</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-900 leading-relaxed mb-6">
                 {project.description}
               </p>
 
               {project.impact && (
                 <div className="bg-pink-50 border-l-4 border-pink-600 p-4">
                   <h3 className="font-bold text-gray-800 mb-2">Impact</h3>
-                  <p className="text-gray-700">{project.impact}</p>
+                  <p className="text-gray-900">{project.impact}</p>
                 </div>
               )}
             </div>
@@ -114,15 +114,15 @@ export default async function ProjectDetail({ params }: PageProps) {
                 <ul className="space-y-3">
                   <li className="flex gap-3">
                     <span className="text-pink-600 text-xl">✓</span>
-                    <span className="text-gray-700">Améliorer l'accès à {categoryNames[project.category].toLowerCase()}</span>
+                    <span className="text-gray-900">Améliorer l'accès à {categoryNames[project.category].toLowerCase()}</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-pink-600 text-xl">✓</span>
-                    <span className="text-gray-700">Autonomiser les filles et jeunes femmes</span>
+                    <span className="text-gray-900">Autonomiser les filles et jeunes femmes</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-pink-600 text-xl">✓</span>
-                    <span className="text-gray-700">Créer un impact durable et transformateur</span>
+                    <span className="text-gray-900">Créer un impact durable et transformateur</span>
                   </li>
                 </ul>
               </div>
@@ -132,15 +132,15 @@ export default async function ProjectDetail({ params }: PageProps) {
                 <ul className="space-y-3">
                   <li className="flex gap-3">
                     <span className="text-pink-600 text-xl">👭</span>
-                    <span className="text-gray-700">Filles scolarisées</span>
+                    <span className="text-gray-900">Filles scolarisées</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-pink-600 text-xl">👭</span>
-                    <span className="text-gray-700">Filles non scolarisées</span>
+                    <span className="text-gray-900">Filles non scolarisées</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-pink-600 text-xl">👭</span>
-                    <span className="text-gray-700">Jeunes femmes</span>
+                    <span className="text-gray-900">Jeunes femmes</span>
                   </li>
                 </ul>
               </div>
@@ -183,7 +183,7 @@ export default async function ProjectDetail({ params }: PageProps) {
                     </div>
                     <div className="p-6">
                       <h3 className="font-bold text-gray-800 mb-2">{relatedProject.title}</h3>
-                      <p className="text-sm text-gray-600 line-clamp-2">{relatedProject.description}</p>
+                      <p className="text-sm text-gray-900 line-clamp-2">{relatedProject.description}</p>
                     </div>
                   </Link>
                 ))}

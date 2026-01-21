@@ -47,7 +47,7 @@ export default function Gallery() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Galerie de <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Moments</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Découvrez nos actions en images. Les moments qui changent des vies.
             </p>
           </div>
@@ -87,11 +87,11 @@ export default function Gallery() {
                   <ImageIcon size={32} className="text-rose-600 flex-shrink-0" />
                   <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 self-center">Notre Galerie</h2>
                 </div>
-                <p className="text-gray-700 mb-4 text-base sm:text-lg">
+                <p className="text-gray-900 mb-4 text-base sm:text-lg">
                   La galerie de photos de l'ONG FILLES+ montre la diversité de nos activités
                   et l'impact tangible de nos actions auprès des filles et jeunes femmes du Bénin.
                 </p>
-                <p className="text-gray-700 text-base sm:text-lg">
+                <p className="text-gray-900 text-base sm:text-lg">
                   Pour accéder à notre galerie complète avec vidéos HD et photos haute résolution,
                   <span className="font-semibold text-rose-600"> consultez nos réseaux sociaux</span> ou 
                   <span className="font-semibold text-rose-600"> contactez-nous directement</span>.
@@ -106,7 +106,7 @@ export default function Gallery() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Vidéos Récentes</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">Regardez nos dernières vidéos d'impact et de témoignages</p>
+              <p className="text-gray-900 max-w-2xl mx-auto">Regardez nos dernières vidéos d'impact et de témoignages</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
@@ -117,7 +117,7 @@ export default function Gallery() {
                   </div>
                   <div className="p-6">
                     <h3 className="font-bold text-gray-900 mb-2 text-lg">Vidéo {i}: Nos initiatives en action</h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-900">
                       Découvrez l'impact de notre travail auprès des filles du Bénin.
                     </p>
                   </div>

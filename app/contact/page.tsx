@@ -126,7 +126,7 @@ export default function Contact() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Restez <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">en contact</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Des questions? Nous sommes là pour vous aider. Contactez-nous et explorons ensemble comment soutenir notre mission.
             </p>
           </div>
@@ -177,9 +177,9 @@ export default function Contact() {
                       <Clock className="w-6 h-6 text-rose-600" /> Horaires d'ouverture
                     </h3>
                     <div className="space-y-2 text-sm">
-                      <p className="text-gray-700"><span className="font-semibold">Lun-Ven:</span> 8h00 - 17h00</p>
-                      <p className="text-gray-700"><span className="font-semibold">Samedi:</span> 9h00 - 13h00</p>
-                      <p className="text-gray-700"><span className="font-semibold">Dimanche:</span> <span className="text-rose-600 font-semibold">Fermé</span></p>
+                      <p className="text-gray-900"><span className="font-semibold">Lun-Ven:</span> 8h00 - 17h00</p>
+                      <p className="text-gray-900"><span className="font-semibold">Samedi:</span> 9h00 - 13h00</p>
+                      <p className="text-gray-900"><span className="font-semibold">Dimanche:</span> <span className="text-rose-600 font-semibold">Fermé</span></p>
                     </div>
                   </Card>
                 </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                     <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
                       <Mail className="w-6 h-6 text-rose-600" /> Newsletter FILLES+
                     </h3>
-                    <p className="text-gray-700 mb-4">Restez informé(e) de nos actions et programmes pour l'émancipation des filles.</p>
+                    <p className="text-gray-900 mb-4">Restez informé(e) de nos actions et programmes pour l'émancipation des filles.</p>
                     <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                       <input
                         type="email"
@@ -214,12 +214,12 @@ export default function Contact() {
                     <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
                       <Sparkles className="w-6 h-6 text-rose-600" /> Nos abonné(e)s récent(e)s
                     </h3>
-                    <p className="text-gray-600 mb-4 text-sm">Découvrez qui nous suit dans notre mission :</p>
+                    <p className="text-gray-900 mb-4 text-sm">Découvrez qui nous suit dans notre mission :</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {subscribedEmails.slice(-10).map((email, index) => (
                         <div key={index} className="flex items-center gap-2 p-2 bg-gradient-to-r from-rose-50 to-pink-50 rounded-lg">
                           <Mail className="w-4 h-4 text-rose-600 flex-shrink-0" />
-                          <span className="text-sm text-gray-700 truncate">{email}</span>
+                          <span className="text-sm text-gray-900 truncate">{email}</span>
                         </div>
                       ))}
                     </div>
@@ -265,7 +265,7 @@ export default function Contact() {
               <div>
                 <Card className="border-0 shadow-2xl p-8 bg-white">
                   <h2 className="text-3xl font-bold text-gray-900 mb-2">Envoyez-nous un message</h2>
-                  <p className="text-gray-600 mb-6">Réponse rapide garantie en 24h</p>
+                  <p className="text-gray-900 mb-6">Réponse rapide garantie en 24h</p>
 
                   {submitted && (
                     <div className="bg-green-50 border-2 border-green-500 p-4 rounded-lg mb-6 flex gap-3">

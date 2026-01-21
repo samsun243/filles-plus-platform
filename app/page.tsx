@@ -54,12 +54,12 @@ export default function Home() {
               </h1>
 
               {/* Sous-titre Premium */}
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl leading-relaxed mx-auto font-medium">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-900 mb-10 max-w-3xl leading-relaxed mx-auto font-medium">
                 {orgConfig.slogan}
               </p>
 
               {/* Descriptif */}
-              <p className="text-base sm:text-lg text-gray-600 mb-10 max-w-2xl leading-relaxed mx-auto">
+              <p className="text-base sm:text-lg text-gray-900 mb-10 max-w-2xl leading-relaxed mx-auto">
                 Nous transformons des vies à travers l'éducation, la santé, le leadership et l'inclusion sociale au Bénin.
               </p>
 
@@ -91,19 +91,19 @@ export default function Home() {
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                     <AnimatedCounter end={5000} suffix="+" />
                   </div>
-                  <div className="text-gray-700 text-xs sm:text-sm">Filles autonomisées</div>
+                  <div className="text-gray-900 text-xs sm:text-sm">Filles autonomisées</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                     <AnimatedCounter end={15} suffix="+" />
                   </div>
-                  <div className="text-gray-700 text-xs sm:text-sm">Projets actifs</div>
+                  <div className="text-gray-900 text-xs sm:text-sm">Projets actifs</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                     <AnimatedCounter end={30} suffix="+" />
                   </div>
-                  <div className="text-gray-700 text-xs sm:text-sm">Partenaires</div>
+                  <div className="text-gray-900 text-xs sm:text-sm">Partenaires</div>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Notre Vision & Mission</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-900 max-w-2xl mx-auto">
                 Guidées par des valeurs fortes, nous travaillons chaque jour pour créer un impact durable.
               </p>
             </div>
@@ -131,7 +131,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900">Notre Mission</h3>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-900 leading-relaxed">
                     {orgConfig.mission}
                   </p>
                 </div>
@@ -147,7 +147,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900">Notre Vision</h3>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-900 leading-relaxed">
                     {orgConfig.vision}
                   </p>
                 </div>
@@ -162,7 +162,7 @@ export default function Home() {
             <FadeInSection>
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Notre Impact Chiffré</h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p className="text-lg text-gray-900 max-w-2xl mx-auto">
                   Des résultats concrets qui témoignent de notre engagement quotidien.
                 </p>
               </div>
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="text-center mb-12 sm:mb-16">
               <span className="text-rose-600 font-semibold text-sm sm:text-base">NOS PRINCIPES</span>
               <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">Les valeurs qui nous guident</h2>
-              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto">
                 Six piliers fondamentaux qui structurent nos actions et notre engagement.
               </p>
             </div>
@@ -233,7 +233,7 @@ export default function Home() {
             <FadeInSection>
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Témoignages</h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p className="text-lg text-gray-900 max-w-2xl mx-auto">
                   Découvrez l'impact de nos programmes à travers les voix de celles qui en bénéficient.
                 </p>
               </div>

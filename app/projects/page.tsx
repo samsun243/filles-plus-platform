@@ -42,7 +42,7 @@ export default function Projects() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Nos <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Projets</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Découvrez les initiatives majeures qui transforment des vies à travers l'éducation, la santé et le leadership.
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function Projects() {
         <section className="py-12 sm:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="mb-12 text-center">
-              <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-900 max-w-3xl mx-auto">
                 L'ONG FILLES+ déploie des initiatives stratégiques pour atteindre sa mission d'autonomisation. 
                 Chaque projet répond à des besoins spécifiques et crée un impact durable.
               </p>
@@ -89,7 +89,7 @@ export default function Projects() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Impact Détaillé</h2>
-              <p className="text-gray-600">Découvrez le potentiel et l'impact de chaque projet</p>
+              <p className="text-gray-900">Découvrez le potentiel et l'impact de chaque projet</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
@@ -103,7 +103,7 @@ export default function Projects() {
                         {categoryNames[project.category]}
                       </span>
                     </div>
-                    <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
+                    <p className="text-gray-900 mb-4 leading-relaxed">{project.description}</p>
                     {project.impact && (
                       <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-4 rounded-lg border-l-4 border-rose-600">
                         <p className="text-sm text-gray-900">

@@ -131,7 +131,7 @@ export default function Team() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               L'Équipe <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Découvrez l'équipe dévouée qui transforme des vies au quotidien.
             </p>
           </div>
@@ -294,7 +294,7 @@ export default function Team() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Notre Impact Collectif</h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-900 max-w-2xl mx-auto">
                 Ensemble, nous transformons des vies et bâtissons un avenir meilleur pour les filles du Bénin
               </p>
             </div>
@@ -306,7 +306,7 @@ export default function Team() {
                 </div>
                 <div className="stat-value text-2xl font-bold text-primary">5000+</div>
                 <div className="stat-title text-sm font-semibold">Filles autonomisées</div>
-                <div className="stat-desc text-xs text-gray-600 mt-1">Depuis 2025</div>
+                <div className="stat-desc text-xs text-gray-900 mt-1">Depuis 2025</div>
               </div>
 
               <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
@@ -315,7 +315,7 @@ export default function Team() {
                 </div>
                 <div className="stat-value text-2xl font-bold text-secondary">15+</div>
                 <div className="stat-title text-sm font-semibold">Projets actifs</div>
-                <div className="stat-desc text-xs text-gray-600 mt-1">Dans tout le Bénin</div>
+                <div className="stat-desc text-xs text-gray-900 mt-1">Dans tout le Bénin</div>
               </div>
 
               <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
@@ -324,7 +324,7 @@ export default function Team() {
                 </div>
                 <div className="stat-value text-2xl font-bold text-accent">30+</div>
                 <div className="stat-title text-sm font-semibold">Partenaires</div>
-                <div className="stat-desc text-xs text-gray-600 mt-1">Institutions & ONG</div>
+                <div className="stat-desc text-xs text-gray-900 mt-1">Institutions & ONG</div>
               </div>
 
               <div className="stat bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/80 transition-all duration-300 hover:scale-105 shadow-lg">
@@ -333,7 +333,7 @@ export default function Team() {
                 </div>
                 <div className="stat-value text-2xl font-bold text-primary">12</div>
                 <div className="stat-title text-sm font-semibold">Communes</div>
-                <div className="stat-desc text-xs text-gray-600 mt-1">Couvertes</div>
+                <div className="stat-desc text-xs text-gray-900 mt-1">Couvertes</div>
               </div>
             </div>
 
@@ -357,7 +357,7 @@ export default function Team() {
                 <Users size={32} className="text-rose-600" />
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Nos Valeurs Collectifs</h2>
-              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+              <p className="text-gray-900 text-lg mb-8 leading-relaxed">
                 Chaque membre de l'équipe FILLES+ partage une vision commune : créer un monde où chaque fille 
                 a accès aux opportunités d'éducation, de santé et de leadership qui lui permet de réaliser son plein potentiel.
               </p>

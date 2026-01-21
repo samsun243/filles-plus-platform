@@ -73,7 +73,7 @@ export default function FAQPage() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Vous avez des <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">questions</span> ?
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Trouvez rapidement les réponses à vos questions sur notre mission, nos programmes et comment nous soutenir.
             </p>
           </div>
@@ -96,7 +96,7 @@ export default function FAQPage() {
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                   Vous n'avez pas trouvé votre réponse ?
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p className="text-lg text-gray-900 max-w-2xl mx-auto">
                   Notre équipe est là pour vous aider. N'hésitez pas à nous contacter directement.
                 </p>
               </div>
@@ -108,7 +108,7 @@ export default function FAQPage() {
                     <Mail className="w-6 h-6 text-rose-600" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600 mb-4">Réponse sous 24h</p>
+                  <p className="text-gray-900 mb-4">Réponse sous 24h</p>
                   <Button asChild variant="outline" className="w-full">
                     <Link href="mailto:ongfillesplus@gmail.com">Écrire</Link>
                   </Button>
@@ -120,7 +120,7 @@ export default function FAQPage() {
                     <Phone className="w-6 h-6 text-pink-600" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Téléphone</h3>
-                  <p className="text-gray-600 mb-4">Lun-Ven 8h-17h</p>
+                  <p className="text-gray-900 mb-4">Lun-Ven 8h-17h</p>
                   <Button asChild variant="outline" className="w-full">
                     <Link href="tel:+22997760992">Appeler</Link>
                   </Button>
@@ -132,7 +132,7 @@ export default function FAQPage() {
                     <MessageCircle className="w-6 h-6 text-fuchsia-600" />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Chat en ligne</h3>
-                  <p className="text-gray-600 mb-4">Réponse immédiate</p>
+                  <p className="text-gray-900 mb-4">Réponse immédiate</p>
                   <Button asChild className="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700">
                     <Link href="/contact">Commencer</Link>
                   </Button>

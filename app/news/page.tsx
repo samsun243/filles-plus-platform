@@ -44,7 +44,7 @@ export default function News() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Dernières <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Actualités</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Restez informé des dernières nouvelles et initiatives de l'ONG FILLES+
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function News() {
                       <span className="text-xs font-bold bg-rose-100 text-rose-700 px-4 py-2 rounded-full">
                         {categoryLabels[featuredNews.category]}
                       </span>
-                      <span className="text-xs text-gray-600 flex items-center gap-1">
+                      <span className="text-xs text-gray-900 flex items-center gap-1">
                         <Calendar size={14} />
                         {new Date(featuredNews.date).toLocaleDateString('fr-FR')}
                       </span>
@@ -80,7 +80,7 @@ export default function News() {
                     <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                       {featuredNews.title}
                     </h3>
-                    <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+                    <p className="text-gray-900 text-base sm:text-lg mb-6 leading-relaxed">
                       {featuredNews.content || featuredNews.description}
                     </p>
                     <Link
@@ -115,7 +115,7 @@ export default function News() {
 
             {news.length === 0 && (
               <div className="text-center py-20">
-                <p className="text-gray-600 text-lg font-medium">Aucune actualité pour le moment.</p>
+                <p className="text-gray-900 text-lg font-medium">Aucune actualité pour le moment.</p>
                 <p className="text-gray-500 mt-2">Revenez bientôt pour les dernières mises à jour.</p>
               </div>
             )}

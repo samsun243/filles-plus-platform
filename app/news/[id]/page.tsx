@@ -42,7 +42,7 @@ export default async function NewsDetail({ params }: PageProps) {
               <span>/</span>
               <Link href="/news" className="text-pink-600 hover:text-pink-700">Actualités</Link>
               <span>/</span>
-              <span className="text-gray-600">{newsItem.title}</span>
+              <span className="text-gray-900">{newsItem.title}</span>
             </div>
           </div>
         </section>
@@ -81,7 +81,7 @@ export default async function NewsDetail({ params }: PageProps) {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="bg-white rounded-lg shadow-md p-8">
               <div className="prose prose-lg max-w-none">
-                <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                <p className="text-gray-900 leading-relaxed whitespace-pre-line">
                   {newsItem.content}
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default async function NewsDetail({ params }: PageProps) {
                         {categoryLabels[otherNews.category]}
                       </p>
                       <h3 className="font-bold text-gray-800 mb-2 line-clamp-2">{otherNews.title}</h3>
-                      <p className="text-sm text-gray-600 line-clamp-2">{otherNews.description}</p>
+                      <p className="text-sm text-gray-900 line-clamp-2">{otherNews.description}</p>
                       <p className="text-xs text-gray-500 mt-3">
                         {new Date(otherNews.date).toLocaleDateString('fr-FR')}
                       </p>

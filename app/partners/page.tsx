@@ -35,7 +35,7 @@ export default function Partners() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Ensemble pour <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">l'Impact</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Découvrez les organisations et acteurs qui soutiennent notre mission d'empowerment.
             </p>
           </div>
@@ -74,13 +74,13 @@ export default function Partners() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Devenir Partenaire</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto text-lg">Rejoignez nos efforts pour créer un impact durable</p>
+              <p className="text-gray-900 max-w-2xl mx-auto text-lg">Rejoignez nos efforts pour créer un impact durable</p>
             </div>
 
             <div className="max-w-3xl mx-auto">
               <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Nous recherchons des partenaires</h3>
-                <p className="text-gray-700 mb-8 text-base sm:text-lg leading-relaxed">
+                <p className="text-gray-900 mb-8 text-base sm:text-lg leading-relaxed">
                   L'ONG FILLES+ est toujours à la recherche de partenaires pour renforcer son impact
                   et élargir ses services. Si votre organisation partage nos valeurs et souhaite
                   contribuer à l'autonomisation des filles béninoises, nous aimerions discuter d'une
@@ -92,21 +92,21 @@ export default function Partners() {
                     <Lightbulb size={32} className="text-rose-600 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1 text-lg">Partenariat en ressources</h4>
-                      <p className="text-gray-700">Fourniture de matériel, équipement ou expertise</p>
+                      <p className="text-gray-900">Fourniture de matériel, équipement ou expertise</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Users size={32} className="text-rose-600 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1 text-lg">Partenariat en main-d'œuvre</h4>
-                      <p className="text-gray-700">Mise à disposition de personnel ou bénévoles</p>
+                      <p className="text-gray-900">Mise à disposition de personnel ou bénévoles</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <DollarSign size={32} className="text-rose-600 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1 text-lg">Partenariat financier</h4>
-                      <p className="text-gray-700">Contribution financière pour des projets spécifiques</p>
+                      <p className="text-gray-900">Contribution financière pour des projets spécifiques</p>
                     </div>
                   </div>
                 </div>

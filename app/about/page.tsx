@@ -43,7 +43,7 @@ export default function About() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               À propos de <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
               Découvrez notre histoire, notre mission et les valeurs qui guident chaque action.
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function About() {
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Notre Mission</h2>
                   </div>
-                  <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+                  <p className="text-gray-900 leading-relaxed mb-8 text-lg">
                     {orgConfig.mission}
                   </p>
                   <div className="space-y-3">
@@ -77,7 +77,7 @@ export default function About() {
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3">
                         <CheckCircle size={18} className="text-rose-600 flex-shrink-0" />
-                        <span className="text-gray-700">{item}</span>
+                        <span className="text-gray-900">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -94,7 +94,7 @@ export default function About() {
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900">Notre Vision</h2>
                   </div>
-                  <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+                  <p className="text-gray-900 leading-relaxed mb-8 text-lg">
                     {orgConfig.vision}
                   </p>
                   <div className="space-y-3">
@@ -108,7 +108,7 @@ export default function About() {
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3">
                         <Heart size={18} className="text-pink-600 flex-shrink-0" />
-                        <span className="text-gray-700">{item}</span>
+                        <span className="text-gray-900">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -123,7 +123,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Nos Valeurs Fondamentales</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              <p className="text-gray-900 max-w-2xl mx-auto text-lg">
                 Nos 6 piliers guident chaque action et décision de l'ONG FILLES+
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Notre Parcours</h2>
-              <p className="text-gray-600">Une histoire de passion et d'engagement envers les filles béninoises</p>
+              <p className="text-gray-900">Une histoire de passion et d'engagement envers les filles béninoises</p>
             </div>
 
             <div className="max-w-3xl mx-auto">
@@ -189,7 +189,7 @@ export default function About() {
                         {event.year}
                       </span>
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mt-2">{event.title}</h3>
-                      <p className="text-gray-700 mt-3 text-base">{event.description}</p>
+                      <p className="text-gray-900 mt-3 text-base">{event.description}</p>
                     </div>
                   </div>
                 ))}
