@@ -310,19 +310,19 @@ export default function Team() {
               </div>
 
               <div className="stat bg-white rounded-xl p-6 text-center transition-all duration-300 hover:scale-105 shadow-lg">
-                <div className="stat-figure text-secondary mb-2">
+                <div className="stat-figure text-gray-700 mb-2">
                   <Briefcase className="w-8 h-8" />
                 </div>
-                <div className="stat-value text-2xl font-bold text-secondary">15+</div>
+                <div className="stat-value text-2xl font-bold text-gray-900">15+</div>
                 <div className="stat-title text-sm font-semibold text-gray-900">Projets actifs</div>
                 <div className="stat-desc text-xs text-gray-900 mt-1">Dans tout le Bénin</div>
               </div>
 
               <div className="stat bg-white rounded-xl p-6 text-center transition-all duration-300 hover:scale-105 shadow-lg">
-                <div className="stat-figure text-accent mb-2">
+                <div className="stat-figure text-gray-700 mb-2">
                   <Award className="w-8 h-8" />
                 </div>
-                <div className="stat-value text-2xl font-bold text-accent">30+</div>
+                <div className="stat-value text-2xl font-bold text-gray-900">30+</div>
                 <div className="stat-title text-sm font-semibold text-gray-900">Partenaires</div>
                 <div className="stat-desc text-xs text-gray-900 mt-1">Institutions & ONG</div>
               </div>
