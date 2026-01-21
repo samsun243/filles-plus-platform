@@ -300,7 +300,7 @@ export default function Team() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white rounded-xl p-6 text-center transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-primary mb-2">
                   <Users className="w-8 h-8" />
                 </div>
@@ -309,7 +309,7 @@ export default function Team() {
                 <div className="stat-desc text-xs text-gray-900 mt-1">Depuis 2025</div>
               </div>
 
-              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white rounded-xl p-6 text-center transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-secondary mb-2">
                   <Briefcase className="w-8 h-8" />
                 </div>
@@ -318,7 +318,7 @@ export default function Team() {
                 <div className="stat-desc text-xs text-gray-900 mt-1">Dans tout le Bénin</div>
               </div>
 
-              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white rounded-xl p-6 text-center transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-accent mb-2">
                   <Award className="w-8 h-8" />
                 </div>
@@ -327,7 +327,7 @@ export default function Team() {
                 <div className="stat-desc text-xs text-gray-900 mt-1">Institutions & ONG</div>
               </div>
 
-              <div className="stat bg-white backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white transition-all duration-300 hover:scale-105 shadow-lg">
+              <div className="stat bg-white rounded-xl p-6 text-center transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="stat-figure text-primary mb-2">
                   <MapPin className="w-8 h-8" />
                 </div>
@@ -338,11 +338,11 @@ export default function Team() {
             </div>
 
             <div className="mt-12 text-center">
-              <div className="alert alert-success shadow-lg max-w-md mx-auto">
-                <Sparkles className="w-6 h-6" />
-                <span className="font-semibold">Rejoignez notre mission !</span>
-                <div>
-                  <span className="text-sm">Chaque membre compte pour transformer des vies</span>
+              <div className="alert bg-white text-gray-900 shadow-lg max-w-md mx-auto border border-gray-200 p-4 rounded-lg flex items-center justify-center gap-3">
+                <Sparkles className="w-6 h-6 text-rose-600" />
+                <div className="text-left">
+                  <div className="font-semibold text-gray-900">Rejoignez notre mission !</div>
+                  <div className="text-sm text-gray-700">Chaque membre compte pour transformer des vies</div>
                 </div>
               </div>
             </div>
