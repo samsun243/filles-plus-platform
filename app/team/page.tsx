@@ -128,10 +128,10 @@ export default function Team() {
               <Sparkles size={18} className="text-rose-600" />
               <span className="text-rose-700 font-bold text-sm">Notre Équipe</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-gray-100 dark:text-gray-100 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               L'Équipe <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
               Découvrez l'équipe dévouée qui transforme des vies au quotidien.
             </p>
           </div>
@@ -144,7 +144,7 @@ export default function Team() {
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-8">
                 <Crown className="w-8 h-8 text-rose-600" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 dark:text-gray-100">Bureau Exécutif</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Bureau Exécutif</h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {teamMembers.filter(member => member.category === 'Bureau Exécutif').map((member) => (
@@ -163,7 +163,7 @@ export default function Team() {
                       </div>
                     </figure>
                     <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 dark:text-gray-100 dark:text-gray-100 mb-2 group-hover:text-primary transition-colors duration-300">{member.name}</h3>
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">{member.name}</h3>
                       <div className="badge badge-primary badge-outline mb-3 hover:badge-primary transition-all duration-300 cursor-help" title={`Rôle: ${member.role}`}>
                         {member.role}
                       </div>
@@ -180,7 +180,7 @@ export default function Team() {
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-8">
                 <UserCheck className="w-8 h-8 text-rose-600" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 dark:text-gray-100">Chargés de Mission</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Chargés de Mission</h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {teamMembers.filter(member => member.category === 'Chargés de Mission').map((member) => (
@@ -202,7 +202,7 @@ export default function Team() {
                       </div>
                     </figure>
                     <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">{member.name}</h3>
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
                       <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
                       <div className="card-actions justify-center">
                         <div className="badge badge-ghost badge-sm">{member.category}</div>
@@ -217,7 +217,7 @@ export default function Team() {
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-8">
                 <Award className="w-8 h-8 text-rose-600" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">Présidents de Commission</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Présidents de Commission</h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {teamMembers.filter(member => member.category === 'Présidents de Commission').map((member) => (
@@ -239,7 +239,7 @@ export default function Team() {
                       </div>
                     </figure>
                     <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">{member.name}</h3>
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
                       <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
                       <div className="card-actions justify-center">
                         <div className="badge badge-ghost badge-sm">{member.category}</div>
@@ -254,7 +254,7 @@ export default function Team() {
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-8">
                 <MapPin className="w-8 h-8 text-rose-600" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100">Coordonnateurs Communaux</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Coordonnateurs Communaux</h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {teamMembers.filter(member => member.category === 'Coordonnateurs Communaux').map((member) => (
@@ -276,7 +276,7 @@ export default function Team() {
                       </div>
                     </figure>
                     <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">{member.name}</h3>
+                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
                       <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
                       <div className="card-actions justify-center">
                         <div className="badge badge-ghost badge-sm">{member.category}</div>
@@ -293,8 +293,8 @@ export default function Team() {
         <section className="py-12 sm:py-20 bg-gradient-to-r from-rose-50 via-pink-50 to-fuchsia-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Notre Impact Collectif</h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300 dark:text-gray-300 max-w-2xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Notre Impact Collectif</h2>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
                 Ensemble, nous transformons des vies et bâtissons un avenir meilleur pour les filles du Bénin
               </p>
             </div>
@@ -356,8 +356,8 @@ export default function Team() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-rose-100 rounded-full mb-6">
                 <Users size={32} className="text-rose-600" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Nos Valeurs Collectifs</h2>
-              <p className="text-gray-700 dark:text-gray-300 dark:text-gray-300 text-lg mb-8 leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Nos Valeurs Collectifs</h2>
+              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
                 Chaque membre de l'équipe FILLES+ partage une vision commune : créer un monde où chaque fille 
                 a accès aux opportunités d'éducation, de santé et de leadership qui lui permet de réaliser son plein potentiel.
               </p>

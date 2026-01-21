@@ -48,13 +48,13 @@ export default function Home() {
               </div>
 
               {/* Titre Principal Élégant */}
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 dark:text-gray-100 mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-6 leading-tight">
                 <span className="block">Empowerment</span>
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-pink-600 to-fuchsia-600">Des Filles</span>
               </h1>
 
               {/* Sous-titre Premium */}
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-10 max-w-3xl leading-relaxed mx-auto font-medium">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl leading-relaxed mx-auto font-medium">
                 {orgConfig.slogan}
               </p>
 
@@ -88,22 +88,22 @@ export default function Home() {
               {/* Stats Animées */}
               <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-3 sm:gap-8">
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1 sm:mb-2">
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                     <AnimatedCounter end={5000} suffix="+" />
                   </div>
-                  <div className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm">Filles autonomisées</div>
+                  <div className="text-gray-700 text-xs sm:text-sm">Filles autonomisées</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1 sm:mb-2">
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                     <AnimatedCounter end={15} suffix="+" />
                   </div>
-                  <div className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm">Projets actifs</div>
+                  <div className="text-gray-700 text-xs sm:text-sm">Projets actifs</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-4 border border-white/20">
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1 sm:mb-2">
+                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">
                     <AnimatedCounter end={30} suffix="+" />
                   </div>
-                  <div className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm">Partenaires</div>
+                  <div className="text-gray-700 text-xs sm:text-sm">Partenaires</div>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function Home() {
         <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Notre Vision & Mission</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Notre Vision & Mission</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Guidées par des valeurs fortes, nous travaillons chaque jour pour créer un impact durable.
               </p>
@@ -129,9 +129,9 @@ export default function Home() {
                     <div className="p-3 bg-rose-100 rounded-lg">
                       <Target className="w-6 h-6 text-rose-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Notre Mission</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">Notre Mission</h3>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {orgConfig.mission}
                   </p>
                 </div>
@@ -145,9 +145,9 @@ export default function Home() {
                     <div className="p-3 bg-rose-100 rounded-lg">
                       <Eye className="w-6 h-6 text-rose-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Notre Vision</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">Notre Vision</h3>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {orgConfig.vision}
                   </p>
                 </div>
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <FadeInSection>
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Notre Impact Chiffré</h2>
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">Notre Impact Chiffré</h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                   Des résultats concrets qui témoignent de notre engagement quotidien.
                 </p>
@@ -213,7 +213,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
               <span className="text-rose-600 font-semibold text-sm sm:text-base">NOS PRINCIPES</span>
-              <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-4">Les valeurs qui nous guident</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">Les valeurs qui nous guident</h2>
               <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
                 Six piliers fondamentaux qui structurent nos actions et notre engagement.
               </p>
@@ -232,7 +232,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <FadeInSection>
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Témoignages</h2>
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">Témoignages</h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                   Découvrez l'impact de nos programmes à travers les voix de celles qui en bénéficient.
                 </p>
@@ -273,7 +273,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-12 sm:mb-16 gap-4">
               <div>
                 <span className="text-rose-600 font-semibold text-sm sm:text-base">NOS PROJETS</span>
-                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mt-2">Initiatives en cours</h2>
+                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mt-2">Initiatives en cours</h2>
               </div>
               <Link href="/projects" className="text-rose-600 font-semibold hover:text-rose-700 flex items-center gap-2 whitespace-nowrap">
                 Voir tous les projets
@@ -295,7 +295,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-12 sm:mb-16 gap-4">
               <div>
                 <span className="text-rose-600 font-semibold text-sm sm:text-base">ACTUALITÉS</span>
-                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mt-2">Dernières nouvelles</h2>
+                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mt-2">Dernières nouvelles</h2>
               </div>
               <Link href="/news" className="text-rose-600 font-semibold hover:text-rose-700 flex items-center gap-2 whitespace-nowrap">
                 Lire tous les articles

@@ -87,10 +87,10 @@ export default function Blog() {
               <Sparkles size={18} className="text-rose-600" />
               <span className="text-rose-700 font-bold text-sm">Notre Blog</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-gray-100 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Histoires et <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Insights</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
               Lisez nos articles sur l'empowerment, l'éducation, la santé et le leadership féminin.
             </p>
           </div>
@@ -112,8 +112,8 @@ export default function Blog() {
                     <span className="inline-block text-xs font-bold bg-rose-100 text-rose-700 px-3 py-1 rounded-full mb-3 w-fit">
                       {post.category}
                     </span>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-3 line-clamp-2">{post.title}</h3>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 line-clamp-2 flex-1">{post.excerpt}</p>
+                    <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">{post.title}</h3>
+                    <p className="text-gray-700 text-sm mb-4 line-clamp-2 flex-1">{post.excerpt}</p>
                     
                     <div className="border-t border-gray-200 pt-4">
                       <div className="flex items-center gap-2 text-xs text-gray-600 mb-3">

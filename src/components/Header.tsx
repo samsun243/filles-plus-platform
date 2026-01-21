@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import GlobalSearch from './GlobalSearch';
-import ThemeToggle from './ThemeToggle';
 
 
 export default function Header() {
@@ -142,9 +141,6 @@ export default function Header() {
             <div className="hidden lg:block">
               <GlobalSearch className="w-64" />
             </div>
-
-            {/* Thème toggle */}
-            <ThemeToggle />
 
             <Button
               asChild

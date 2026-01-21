@@ -39,10 +39,10 @@ export default function Projects() {
               <Sparkles size={18} className="text-rose-600" />
               <span className="text-rose-700 font-bold text-sm">Nos Initiatives</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 dark:text-gray-100 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               Nos <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Projets</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto">
               Découvrez les initiatives majeures qui transforment des vies à travers l'éducation, la santé et le leadership.
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function Projects() {
         <section className="py-12 sm:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="mb-12 text-center">
-              <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
                 L'ONG FILLES+ déploie des initiatives stratégiques pour atteindre sa mission d'autonomisation. 
                 Chaque projet répond à des besoins spécifiques et crée un impact durable.
               </p>
@@ -69,7 +69,7 @@ export default function Projects() {
                     <div className="p-2 bg-rose-100 rounded-lg">
                       <Zap size={24} className="text-rose-600" />
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 pb-0">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 pb-0">
                       {categoryNames[category]}
                     </h2>
                   </div>
@@ -88,7 +88,7 @@ export default function Projects() {
         <section className="py-12 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Impact Détaillé</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Impact Détaillé</h2>
               <p className="text-gray-600">Découvrez le potentiel et l'impact de chaque projet</p>
             </div>
 
@@ -98,15 +98,15 @@ export default function Projects() {
                   <div className="h-1 bg-gradient-to-r from-rose-600 to-pink-600"></div>
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">{project.title}</h3>
+                      <h3 className="text-lg font-bold text-gray-900">{project.title}</h3>
                       <span className="text-xs font-bold bg-rose-100 text-rose-700 px-3 py-1 rounded-full">
                         {categoryNames[project.category]}
                       </span>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{project.description}</p>
+                    <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
                     {project.impact && (
                       <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-4 rounded-lg border-l-4 border-rose-600">
-                        <p className="text-sm text-gray-900 dark:text-gray-100">
+                        <p className="text-sm text-gray-900">
                           <Target className="inline w-4 h-4 text-rose-600 mr-1" /> <span className="font-bold text-rose-600">Impact:</span> {project.impact}
                         </p>
                       </div>
