@@ -102,6 +102,14 @@ const teamMembers = [
     category: 'Coordonnateurs Communaux',
     image: '/images/équipe/Coordonnateur Adja Ouèrè.jpg'
   }
+  ,
+  {
+    id: 14,
+    name: 'A. Paul KOSSOLOU',
+    role: 'Coordonnateur Kétou',
+    category: 'Coordonnateurs Communaux',
+    image: '/images/équipe/A. Paul KOSSOLOU.jpg'
+  }
 ];
 
 export default function Team() {
