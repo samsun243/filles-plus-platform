@@ -148,7 +148,7 @@ export default function Team() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                 {teamMembers.filter(member => member.category === 'Bureau Exécutif').map((member) => (
-                  <div key={member.id} className="card bg-base-100/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 border-0 hover:border-primary/20 border-2 group">
+                  <div key={member.id} className="card bg-white/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 border-0 hover:border-primary/20 border-2 group">
                     <figure className="px-6 pt-6">
                       <div className="avatar group-hover:ring-4 ring-primary/30 transition-all duration-300">
                         <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center shadow-lg">
@@ -186,7 +186,7 @@ export default function Team() {
                 {teamMembers.filter(member => member.category === 'Chargés de Mission').map((member) => (
                   <Card
                     key={member.id}
-                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
+                    className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
                   >
                     <figure className="px-6 pt-6">
                       <div className="avatar">
@@ -223,7 +223,7 @@ export default function Team() {
                 {teamMembers.filter(member => member.category === 'Présidents de Commission').map((member) => (
                   <Card
                     key={member.id}
-                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
+                    className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
                   >
                     <figure className="px-6 pt-6">
                       <div className="avatar">
@@ -260,7 +260,7 @@ export default function Team() {
                 {teamMembers.filter(member => member.category === 'Coordonnateurs Communaux').map((member) => (
                   <Card
                     key={member.id}
-                    className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
+                    className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
                   >
                     <figure className="px-6 pt-6">
                       <div className="avatar">

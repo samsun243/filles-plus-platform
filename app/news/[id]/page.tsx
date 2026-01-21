@@ -93,7 +93,7 @@ export default async function NewsDetail({ params }: PageProps) {
                   <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
                     Partager sur Facebook
                   </button>
-                  <button className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition">
+                  <button className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800 transition">
                     Partager sur Twitter
                   </button>
                   <button className="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition">
