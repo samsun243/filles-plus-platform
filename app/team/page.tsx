@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Sparkles, Users, Crown, UserCheck, Briefcase, Award, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import TeamAvatar from '@/components/TeamAvatar';
+import TeamGrid from '@/components/TeamGrid';
 
 const teamMembers = [
   // Bureau Exécutif
@@ -155,28 +156,7 @@ export default function Team() {
                 <Crown className="w-8 h-8 text-rose-600" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Bureau Exécutif</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-                {teamMembers.filter(member => member.category === 'Bureau Exécutif').map((member) => (
-                  <div key={member.id} className="card bg-white backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 border-0 hover:border-primary/20 border-2 group">
-                    <figure className="px-6 pt-6">
-                      <div className="avatar group-hover:ring-4 ring-primary/30 transition-all duration-300">
-                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center shadow-lg">
-                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
-                        </div>
-                      </div>
-                    </figure>
-                    <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">{member.name}</h3>
-                      <div className="badge bg-white text-gray-900 border border-gray-200 mb-3 px-3 py-1 rounded-full" title={`Rôle: ${member.role}`}>
-                        {member.role}
-                      </div>
-                      <div className="card-actions justify-center">
-                        <div className="badge bg-white text-gray-900 border border-gray-200 badge-sm">{member.category}</div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <TeamGrid members={teamMembers.filter(member => member.category === 'Bureau Exécutif')} />
             </div>
 
             {/* Chargés de Mission */}
@@ -185,29 +165,7 @@ export default function Team() {
                 <UserCheck className="w-8 h-8 text-rose-600" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Chargés de Mission</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-                {teamMembers.filter(member => member.category === 'Chargés de Mission').map((member) => (
-                  <Card
-                    key={member.id}
-                    className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
-                  >
-                    <figure className="px-6 pt-6">
-                      <div className="avatar">
-                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
-                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
-                        </div>
-                      </div>
-                    </figure>
-                    <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <div className="badge bg-white text-gray-900 border border-gray-200 mb-3 px-3 py-1 rounded-full">{member.role}</div>
-                      <div className="card-actions justify-center">
-                        <div className="badge bg-white text-gray-900 border border-gray-200 badge-sm">{member.category}</div>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
+              <TeamGrid members={teamMembers.filter(member => member.category === 'Chargés de Mission')} />
             </div>
 
             {/* Présidents de Commission */}
@@ -216,29 +174,7 @@ export default function Team() {
                 <Award className="w-8 h-8 text-rose-600" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Présidents de Commission</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-                {teamMembers.filter(member => member.category === 'Présidents de Commission').map((member) => (
-                  <Card
-                    key={member.id}
-                    className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
-                  >
-                    <figure className="px-6 pt-6">
-                      <div className="avatar">
-                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
-                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
-                        </div>
-                      </div>
-                    </figure>
-                    <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
-                      <div className="card-actions justify-center">
-                        <div className="badge badge-ghost badge-sm">{member.category}</div>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
+              <TeamGrid members={teamMembers.filter(member => member.category === 'Présidents de Commission')} />
             </div>
 
             {/* Coordonnateurs Communaux */}
@@ -247,29 +183,7 @@ export default function Team() {
                 <MapPin className="w-8 h-8 text-rose-600" />
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Coordonnateurs Communaux</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-                {teamMembers.filter(member => member.category === 'Coordonnateurs Communaux').map((member) => (
-                  <Card
-                    key={member.id}
-                    className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border-0"
-                  >
-                    <figure className="px-6 pt-6">
-                      <div className="avatar">
-                        <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-white ring-offset-2 overflow-hidden bg-gray-50 flex items-center justify-center">
-                          <TeamAvatar src={member.image} name={member.name} role={member.role} />
-                        </div>
-                      </div>
-                    </figure>
-                    <div className="card-body items-center text-center p-6">
-                      <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
-                      <div className="card-actions justify-center">
-                        <div className="badge badge-ghost badge-sm">{member.category}</div>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
+              <TeamGrid members={teamMembers.filter(member => member.category === 'Coordonnateurs Communaux')} />
             </div>
           </div>
         </section>
