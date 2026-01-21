@@ -164,11 +164,11 @@ export default function Team() {
                     </figure>
                     <div className="card-body items-center text-center p-6">
                       <h3 className="card-title text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">{member.name}</h3>
-                      <div className="badge badge-primary badge-outline mb-3 hover:badge-primary transition-all duration-300 cursor-help" title={`Rôle: ${member.role}`}>
+                      <div className="badge bg-white text-gray-900 border border-gray-200 mb-3 px-3 py-1 rounded-full" title={`Rôle: ${member.role}`}>
                         {member.role}
                       </div>
                       <div className="card-actions justify-center">
-                        <div className="badge badge-ghost badge-sm hover:badge-accent transition-all duration-300">{member.category}</div>
+                        <div className="badge bg-white text-gray-900 border border-gray-200 badge-sm">{member.category}</div>
                       </div>
                     </div>
                   </div>
@@ -203,9 +203,9 @@ export default function Team() {
                     </figure>
                     <div className="card-body items-center text-center p-6">
                       <h3 className="card-title text-lg font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <div className="badge badge-primary badge-outline mb-3">{member.role}</div>
+                      <div className="badge bg-white text-gray-900 border border-gray-200 mb-3 px-3 py-1 rounded-full">{member.role}</div>
                       <div className="card-actions justify-center">
-                        <div className="badge badge-ghost badge-sm">{member.category}</div>
+                        <div className="badge bg-white text-gray-900 border border-gray-200 badge-sm">{member.category}</div>
                       </div>
                     </div>
                   </Card>
