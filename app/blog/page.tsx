@@ -2,65 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import { Card } from '@/components/ui/card';
-import { Sparkles, Calendar, User, ArrowRight, BookOpen, MessageCircle, Pill, Star, TrendingUp, Heart } from 'lucide-react';
+import { Sparkles, Calendar, User, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-const blogPosts = [
-  {
-    id: 1,
-    title: 'L\'importance de l\'éducation des filles',
-    excerpt: 'Découvrez pourquoi l\'accès à l\'éducation est crucial pour l\'autonomisation des filles au Bénin.',
-    author: 'Marie Kounarou',
-    date: '12 janvier 2025',
-    category: 'Éducation',
-    icon: BookOpen
-  },
-  {
-    id: 2,
-    title: 'Témoignage : La vie après le programme FILLES+',
-    excerpt: 'Rencontrez Ama, une jeune femme dont la vie a changé grâce à nos programmes de formation.',
-    author: 'Clarisse Mensah',
-    date: '8 janvier 2025',
-    category: 'Témoignages',
-    icon: MessageCircle
-  },
-  {
-    id: 3,
-    title: 'Les défis de la santé féminine en Afrique de l\'Ouest',
-    excerpt: 'Une analyse approfondie des enjeux de santé auxquels font face les filles et jeunes femmes.',
-    author: 'Fatima Diallo',
-    date: '5 janvier 2025',
-    category: 'Santé',
-    icon: Pill
-  },
-  {
-    id: 4,
-    title: 'Leadership féminin : Créer le changement',
-    excerpt: 'Comment les femmes leaders transforment leurs communautés et créent un impact durable.',
-    author: 'Amma Traore',
-    date: '2 janvier 2025',
-    category: 'Leadership',
-    icon: Star
-  },
-  {
-    id: 5,
-    title: 'Entrepreneuriat au féminin : Success stories',
-    excerpt: 'Inspirez-vous de jeunes femmes entrepreneurs qui réussissent grâce à nos programmes.',
-    author: 'Jade Osei',
-    date: '28 décembre 2024',
-    category: 'Économie',
-    icon: TrendingUp
-  },
-  {
-    id: 6,
-    title: 'Comment vous pouvez soutenir notre mission',
-    excerpt: 'Les différentes façons de contribuer à l\'autonomisation des filles béninoises.',
-    author: 'Sophie Bernard',
-    date: '25 décembre 2024',
-    category: 'Impact',
-    icon: Heart
-  },
-];
+import { blogPosts } from '@/data/blog';
 
 export default function Blog() {
   return (
