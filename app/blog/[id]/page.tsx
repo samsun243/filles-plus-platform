@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import { blogPosts } from '@/data/blog';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Facebook, Twitter, Linkedin, Share2, Calendar, User, ArrowLeft, Clock, Tag } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Share2, Calendar, ArrowLeft, Clock, Tag, Star } from 'lucide-react';
 
 interface PageProps {
     params: Promise<{
