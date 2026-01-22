@@ -11,11 +11,6 @@ import GlobalSearch from './GlobalSearch';
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +28,7 @@ export default function Header() {
     { label: 'Contact', href: '/contact' },
   ];
 
-  if (!mounted) return null;
+
 
   return (
     <header
