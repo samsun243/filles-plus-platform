@@ -9,12 +9,12 @@ import Link from 'next/link';
 
 const faqItems = [
   {
-    question: "Qu'est-ce que l'ONG FILLES+ ?",
-    answer: "FILLES+ est une organisation non gouvernementale béninoise dédiée à l'autonomisation, l'éducation et la protection des filles et jeunes femmes. Nous travaillons depuis plusieurs années pour créer un impact durable dans les communautés du Bénin."
+    question: "Qu&apos;est-ce que l&apos;ONG FILLES+ ?",
+    answer: "FILLES+ est une organisation non gouvernementale béninoise dédiée à l&apos;autonomisation, l&apos;éducation et la protection des filles et jeunes femmes. Nous travaillons depuis plusieurs années pour créer un impact durable dans les communautés du Bénin."
   },
   {
     question: "Quels sont vos domaines d'intervention ?",
-    answer: "Nous intervenons dans six domaines principaux : l'éducation de qualité, la protection des droits des filles, le leadership féminin, l'inclusion sociale, l'approche communautaire et l'égalité de genre. Chaque domaine est traité de manière holistique pour assurer un impact durable."
+    answer: "Nous intervenons dans six domaines principaux : l&apos;éducation de qualité, la protection des droits des filles, le leadership féminin, l&apos;inclusion sociale, l&apos;approche communautaire et l&apos;égalité de genre. Chaque domaine est traité de manière holistique pour assurer un impact durable."
   },
   {
     question: "Comment puis-je soutenir votre mission ?",
@@ -30,7 +30,7 @@ const faqItems = [
   },
   {
     question: "Comment mesurer l'impact de vos programmes ?",
-    answer: "Nous utilisons plusieurs indicateurs : taux de scolarisation, taux d'insertion professionnelle, niveau d'autonomie financière, participation communautaire, et évolution des mentalités. Nous publions régulièrement nos rapports d'impact et travaillons avec des évaluateurs externes."
+    answer: "Nous utilisons plusieurs indicateurs : taux de scolarisation, taux d&apos;insertion professionnelle, niveau d&apos;autonomie financière, participation communautaire, et évolution des mentalités. Nous publions régulièrement nos rapports d&apos;impact et travaillons avec des évaluateurs externes."
   },
   {
     question: "Proposez-vous des stages ou du bénévolat ?",
@@ -94,10 +94,10 @@ export default function FAQPage() {
             <FadeInSection>
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                  Vous n'avez pas trouvé votre réponse ?
+                  Vous n&apos;avez pas trouvé votre réponse ?
                 </h2>
                 <p className="text-lg text-gray-900 max-w-2xl mx-auto">
-                  Notre équipe est là pour vous aider. N'hésitez pas à nous contacter directement.
+                  Notre équipe est là pour vous aider. N&apos;hésitez pas à nous contacter directement.
                 </p>
               </div>
 

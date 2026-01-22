@@ -6,6 +6,7 @@ import { news, categoryLabels } from '@/data/news';
 import { Card } from '@/components/ui/card';
 import { Sparkles, Calendar } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function News() {
   const featuredNews = news.filter(item => item.featured)[0];
@@ -23,17 +24,9 @@ export default function News() {
       <main className="overflow-hidden">
         {/* Page Hero */}
         <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">
-          <div className="absolute inset-0">
-            <img 
-              src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1920&h=1080&fit=crop" 
-              alt="ONG FILLES+ - Actualités et impact social"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-rose-900/80 via-pink-900/70 to-fuchsia-900/80"></div>
-            <div className="absolute inset-0">
-              <div className="absolute top-10 right-10 w-96 h-96 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-10 left-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-2000"></div>
-            </div>
+          <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-white to-pink-50">
+            <div className="absolute top-10 right-10 w-96 h-96 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div className="absolute -bottom-10 left-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-2000"></div>
           </div>
 
           <div className="relative container mx-auto px-4 z-10 text-center py-16 sm:py-20">
@@ -45,7 +38,7 @@ export default function News() {
               Dernières <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Actualités</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
-              Restez informé des dernières nouvelles et initiatives de l'ONG FILLES+
+              Restez informé des dernières nouvelles et initiatives de l&apos;ONG FILLES+
             </p>
           </div>
         </section>
@@ -60,11 +53,12 @@ export default function News() {
 
               <Card className="border-0 shadow-2xl overflow-hidden max-w-4xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
-                  <div className="h-64 lg:h-full min-h-80 bg-gradient-to-br from-rose-200 via-pink-200 to-fuchsia-200 flex items-center justify-center">
-                    <img 
-                      src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop" 
+                  <div className="h-64 lg:h-full min-h-80 bg-gradient-to-br from-rose-200 via-pink-200 to-fuchsia-200 flex items-center justify-center relative">
+                    <Image
+                      src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=800&h=600&fit=crop"
                       alt="Actualités et communication"
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                   <div className="p-8 sm:p-10 flex flex-col justify-center">

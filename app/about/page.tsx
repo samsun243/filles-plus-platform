@@ -26,25 +26,24 @@ export default function About() {
         ]}
       />
       <main className="overflow-hidden">
-        {/* Page Hero */}
-        <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50">
-            <div className="absolute inset-0">
-              <div className="absolute top-10 left-10 w-96 h-96 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-10 right-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-2000"></div>
-            </div>
+        {/* Page Hero Modernisé */}
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-rose-50">
+          {/* Background Elements */}
+          <div className="absolute inset-0">
+            <div className="absolute top-20 left-20 w-80 h-80 bg-rose-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+            <div className="absolute bottom-20 right-20 w-80 h-80 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
           </div>
 
-          <div className="relative container mx-auto px-4 z-10 text-center py-16 sm:py-20">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-100 to-pink-100 rounded-full px-6 py-3 mb-6 border border-rose-200">
+          <div className="relative container mx-auto px-4 z-10 text-center py-20">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-100 to-pink-100 rounded-full px-6 py-3 mb-8 border border-rose-200/50">
               <Sparkles size={18} className="text-rose-600" />
               <span className="text-rose-700 font-bold text-sm">Nos Racines</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
               À propos de <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
-              Découvrez notre histoire, notre mission et les valeurs qui guident chaque action.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Découvrez notre histoire, notre mission et les valeurs qui guident chaque action pour l'autonomisation des filles béninoises.
             </p>
           </div>
         </section>

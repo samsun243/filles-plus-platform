@@ -19,42 +19,42 @@ export default function Projects() {
         ]}
       />
       <main className="overflow-hidden">
-        {/* Page Hero */}
-        <section className="relative min-h-[45vh] flex items-center overflow-hidden py-12 sm:py-0">
+        {/* Page Hero Modernisé */}
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+          {/* Background Elements */}
           <div className="absolute inset-0">
-            <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop" 
-              alt="ONG FILLES+ - Projets éducatifs et empowerment"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-rose-900/80 via-pink-900/70 to-fuchsia-900/80"></div>
-            <div className="absolute inset-0">
-              <div className="absolute top-10 right-10 w-96 h-96 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-10 left-20 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-2000"></div>
-            </div>
+            <div className="absolute top-20 left-20 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+            <div className="absolute bottom-20 right-20 w-80 h-80 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
           </div>
 
-          <div className="relative container mx-auto px-4 z-10 text-center py-16 sm:py-20">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-100 to-pink-100 rounded-full px-6 py-3 mb-6 border border-rose-200">
-              <Sparkles size={18} className="text-rose-600" />
-              <span className="text-rose-700 font-bold text-sm">Nos Initiatives</span>
+          <div className="relative container mx-auto px-4 z-10 text-center py-20">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full px-6 py-3 mb-8 border border-blue-200/50">
+              <Sparkles size={18} className="text-blue-600" />
+              <span className="text-blue-700 font-bold text-sm">Nos Initiatives</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
-              Nos <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">Projets</span>
+              Nos <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Projets</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
-              Découvrez les initiatives majeures qui transforment des vies à travers l'éducation, la santé et le leadership.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Découvrez les initiatives majeures qui transforment des vies à travers l'éducation, la santé et le leadership au Bénin.
             </p>
           </div>
         </section>
 
-        {/* Projects Grid */}
-        <section className="py-12 sm:py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="mb-12 text-center">
-              <p className="text-base sm:text-lg text-gray-900 max-w-3xl mx-auto">
-                L'ONG FILLES+ déploie des initiatives stratégiques pour atteindre sa mission d'autonomisation. 
-                Chaque projet répond à des besoins spécifiques et crée un impact durable.
+        {/* Projects Grid Modernisé */}
+        <section className="py-24 bg-gradient-to-b from-white via-blue-50/20 to-white relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.02]">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236366F1' fill-opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }}></div>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="mb-20 text-center">
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                L'ONG FILLES+ déploie des initiatives stratégiques pour atteindre sa mission d'autonomisation.
+                Chaque projet répond à des besoins spécifiques et crée un impact durable dans les communautés.
               </p>
             </div>
 

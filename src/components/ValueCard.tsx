@@ -2,15 +2,15 @@
 
 import { Value } from '@/config/org';
 import { Card } from '@/components/ui/card';
-import { BookOpen, Shield, Crown, Users, Globe, Scale, Sparkles } from 'lucide-react';
+import { Shield, Crown, Globe, Star, Heart, Target, Sparkles, LucideProps } from 'lucide-react';
 
-const iconMap: Record<string, React.ComponentType<any>> = {
-  'Éducation de qualité': BookOpen,
-  'Protection des droits': Shield,
-  'Leadership féminin': Crown,
-  'Inclusion sociale': Users,
-  'Approche communautaire': Globe,
-  'Égalité de genre': Scale,
+const iconMap: Record<string, React.ComponentType<LucideProps>> = {
+  'Éducation': Star,
+  'Protection': Shield,
+  'Leadership': Crown,
+  'Inclusion': Heart,
+  'Communauté': Globe,
+  'Égalité': Target,
 };
 
 export default function ValueCard({ value }: { value: Value }) {
