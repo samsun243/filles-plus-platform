@@ -8,7 +8,7 @@ import ProjectCard from '@/components/ProjectCard';
 import NewsCard from '@/components/NewsCard';
 import ValueCard from '@/components/ValueCard';
 import { Button } from '@/components/ui/button';
-import { ChevronRight, Target, Eye, Heart, Sparkles, ArrowRight } from 'lucide-react';
+import { ChevronRight, Target, Eye, Heart, ArrowRight } from 'lucide-react';
 // Nouveaux composants professionnels
 import FadeInSection from '@/components/FadeInSection';
 import AnimatedCounter from '@/components/AnimatedCounter';

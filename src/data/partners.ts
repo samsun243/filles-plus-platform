@@ -89,6 +89,13 @@ export const partners: Partner[] = [
     logo: 'https://www.mffe.bj/wp-content/uploads/2023/03/logo-mffe.png',
     type: 'government',
     website: 'https://mffe.bj'
+  },
+  {
+    id: 'dianlun',
+    name: 'Baoding DianLun Luggage Accessories Manufacturing',
+    description: 'Entreprise partenaire spécialisée dans les accessoires de bagagerie, soutenant l\'autonomisation des filles par la formation et l\'emploi.',
+    logo: '/images/partners/dianlun.jpg',
+    type: 'corporate'
   }
 ];
 

@@ -7,7 +7,7 @@ import { orgConfig } from '@/config/org';
 import { FormEvent, useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Send, CheckCircle, Sparkles, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, Send, CheckCircle, Sparkles, Clock, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
