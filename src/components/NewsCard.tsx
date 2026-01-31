@@ -13,10 +13,10 @@ export default function NewsCard({ article }: { article: NewsItem }) {
       {/* Image */}
       <div className="h-48 bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 relative overflow-hidden">
         {article.image ? (
-          <img 
-            src={article.image} 
+          <img
+            src={article.image}
             alt={article.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
@@ -55,7 +55,7 @@ export default function NewsCard({ article }: { article: NewsItem }) {
           className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white group/btn"
         >
           <Link href={`/news/${article.id}`} className="flex items-center justify-center gap-2">
-            Lire l'article
+            Lire l&apos;article
             <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
           </Link>
         </Button>

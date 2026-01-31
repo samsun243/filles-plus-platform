@@ -36,7 +36,7 @@ export default function TeamAvatar({ src, name, role, size = 128 }: TeamAvatarPr
             width={size}
             height={size}
             sizes={sizesAttr}
-            style={{ objectFit: 'cover' }}
+            style={{ objectFit: 'cover', objectPosition: 'top' }}
             onError={() => setErrored(true)}
             onLoadingComplete={() => setLoaded(true)}
             loading="lazy"

@@ -59,7 +59,7 @@ export default async function BlogDetail({ params }: PageProps) {
                         src={heroImage}
                         alt={post.title}
                         fill
-                        className="object-cover"
+                        className="object-cover object-top"
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>

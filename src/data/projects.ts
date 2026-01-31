@@ -9,6 +9,7 @@ export interface Project {
   status: 'active' | 'completed' | 'ongoing';
   startDate: string;
   impact?: string;
+  beneficiaries?: string[];
 }
 
 export const projects: Project[] = [
@@ -20,7 +21,8 @@ export const projects: Project[] = [
     category: 'education',
     status: 'active',
     startDate: '2025-05-01',
-    impact: 'Réinsertion progressive des filles déscolarisées'
+    impact: 'Réinsertion progressive des filles déscolarisées',
+    beneficiaries: ['Jeunes filles déscolarisées', 'Jeunes filles non scolarisées', 'Familles vulnérables']
   },
   {
     id: 'accompagnement-scolaire',
@@ -30,7 +32,8 @@ export const projects: Project[] = [
     category: 'education',
     status: 'active',
     startDate: '2025-05-01',
-    impact: 'Prévention du décrochage scolaire'
+    impact: 'Prévention du décrochage scolaire',
+    beneficiaries: ['Filles scolarisées (Primaire/Secondaire)', 'Parents d\'élèves', 'Enseignants et éducateurs']
   },
   {
     id: 'protection-apprenties',
@@ -40,7 +43,8 @@ export const projects: Project[] = [
     category: 'social',
     status: 'active',
     startDate: '2025-05-01',
-    impact: 'Protection et autonomisation des apprenties'
+    impact: 'Protection et autonomisation des apprenties',
+    beneficiaries: ['Filles en apprentissage', 'Maîtres d\'apprentissage', 'Artisans locaux']
   },
   {
     id: 'sensibilisation-communautaire',
@@ -50,7 +54,8 @@ export const projects: Project[] = [
     category: 'social',
     status: 'active',
     startDate: '2025-05-01',
-    impact: 'Changement des mentalités communautaires'
+    impact: 'Changement des mentalités communautaires',
+    beneficiaries: ['Leaders communautaires', 'Chefs religieux', 'Population locale']
   },
   {
     id: 'clubs-leadership',
@@ -60,7 +65,8 @@ export const projects: Project[] = [
     category: 'leadership',
     status: 'ongoing',
     startDate: '2025-06-01',
-    impact: 'Développement du leadership féminin'
+    impact: 'Développement du leadership féminin',
+    beneficiaries: ['Adolescentes et jeunes filles', 'Élèves et étudiantes', 'Mentors féminins']
   },
   {
     id: 'formation-familles',
@@ -70,7 +76,8 @@ export const projects: Project[] = [
     category: 'social',
     status: 'active',
     startDate: '2025-05-01',
-    impact: 'Implication familiale dans l\'émancipation des filles'
+    impact: 'Implication familiale dans l\'émancipation des filles',
+    beneficiaries: ['Parents et tuteurs', 'Grands-parents', 'Responsables de foyers']
   }
 ];
 

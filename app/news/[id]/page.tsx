@@ -59,7 +59,7 @@ export default async function NewsDetail({ params }: PageProps) {
             src={heroImage}
             alt={newsItem.title}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>

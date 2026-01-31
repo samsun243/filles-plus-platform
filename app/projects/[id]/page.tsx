@@ -59,7 +59,7 @@ export default async function ProjectDetail({ params }: PageProps) {
             src={heroImage}
             alt={project.title}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
@@ -71,8 +71,8 @@ export default async function ProjectDetail({ params }: PageProps) {
                   {categoryNames[project.category]}
                 </span>
                 <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border ${project.status === 'active' ? 'bg-green-500/20 border-green-400 text-green-300' :
-                    project.status === 'completed' ? 'bg-blue-500/20 border-blue-400 text-blue-300' :
-                      'bg-yellow-500/20 border-yellow-400 text-yellow-300'
+                  project.status === 'completed' ? 'bg-blue-500/20 border-blue-400 text-blue-300' :
+                    'bg-yellow-500/20 border-yellow-400 text-yellow-300'
                   }`}>
                   {project.status === 'active' ? 'En cours' : project.status === 'completed' ? 'Terminé' : 'À venir'}
                 </span>
@@ -196,18 +196,27 @@ export default async function ProjectDetail({ params }: PageProps) {
                       Bénéficiaires
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
-                        <span>Jeunes filles scolarisées</span>
-                      </li>
-                      <li className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
-                        <span>Femmes entrepreneures</span>
-                      </li>
-                      <li className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
-                        <span>Familles et communautés rurales</span>
-                      </li>
+                      {project.beneficiaries ? project.beneficiaries.map((beneficiary, index) => (
+                        <li key={index} className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+                          <span>{beneficiary}</span>
+                        </li>
+                      )) : (
+                        <>
+                          <li className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
+                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+                            <span>Jeunes filles scolarisées</span>
+                          </li>
+                          <li className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
+                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+                            <span>Femmes entrepreneures</span>
+                          </li>
+                          <li className="flex gap-3 text-slate-600 bg-white/50 p-3 rounded-lg">
+                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+                            <span>Familles et communautés rurales</span>
+                          </li>
+                        </>
+                      )}
                     </ul>
                   </div>
                 </div>
