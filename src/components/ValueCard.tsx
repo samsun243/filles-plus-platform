@@ -2,25 +2,29 @@
 
 import { Value } from '@/config/org';
 import { Card } from '@/components/ui/card';
-import { Shield, Crown, Globe, Star, Heart, Target, Sparkles, LucideProps } from 'lucide-react';
+import Image from 'next/image';
 
-const iconMap: Record<string, React.ComponentType<LucideProps>> = {
-  'Éducation': Star,
-  'Protection': Shield,
-  'Leadership': Crown,
-  'Inclusion': Heart,
-  'Communauté': Globe,
-  'Égalité': Target,
+const imageMap: Record<string, string> = {
+  'Éducation de qualité': '/images/principes/Éducation de qualité.jpg',
+  'Protection des droits': '/images/principes/Protection des droits.jpg',
+  'Leadership féminin': '/images/principes/leadership féminin.jpg',
+  'Inclusion sociale': '/images/principes/Inclusion sociale.jpg',
+  'Approche communautaire': '/images/principes/Approche communautaire.jpg',
+  'Égalité de genre': '/images/principes/égalité de genre.jpg',
 };
 
 export default function ValueCard({ value }: { value: Value }) {
-  const IconComponent = iconMap[value.name] || Sparkles;
-
   return (
     <Card className="group h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-gray-200/50 hover:border-pink-200 flex flex-col">
-      {/* Header */}
-      <div className="h-20 bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center group-hover:from-pink-600 group-hover:to-red-600 transition-all">
-        <IconComponent className="w-12 h-12 text-white transform group-hover:scale-125 transition-transform duration-300" />
+      {/* Image Header */}
+      <div className="relative h-48 w-full overflow-hidden">
+        <Image
+          src={imageMap[value.title] || '/images/IMG-20260118-WA0001.jpg'}
+          alt={value.title}
+          fill
+          className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
       </div>
 
       {/* Content */}

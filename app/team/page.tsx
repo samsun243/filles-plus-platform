@@ -1,10 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
-import { Card } from '@/components/ui/card';
 import { Sparkles, Users, Crown, UserCheck, Briefcase, Award, MapPin } from 'lucide-react';
-import Image from 'next/image';
-import TeamAvatar from '@/components/TeamAvatar';
 import TeamGrid from '@/components/TeamGrid';
 
 const teamMembers = [
@@ -35,14 +32,14 @@ const teamMembers = [
     id: 4,
     name: 'Sébastien ZANNOU',
     role: 'Chargé de programme',
-    category: 'Chargés de Mission',
+    category: 'Les Chargés',
     image: '/images/équipe/Chargé de programme.jpg'
   },
   {
     id: 5,
     name: 'SARE Kadydjath',
     role: 'Chargée des Partenariats et des Relations Extérieures',
-    category: 'Chargés de Mission',
+    category: 'Les Chargés',
     image: '/images/équipe/Chargée des Partenariats et des Relations Extérieures.jpg'
   },
   // Présidents de commission
@@ -139,10 +136,10 @@ export default function Team() {
               <span className="text-rose-700 font-bold text-sm">Notre Équipe</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
-              L'Équipe <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
+              L&apos;Équipe <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600">FILLES+</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-900 max-w-2xl mx-auto">
-              Découvrez l'équipe dévouée qui transforme des vies au quotidien.
+              Découvrez l&apos;équipe dévouée qui transforme des vies au quotidien.
             </p>
           </div>
         </section>
@@ -159,13 +156,13 @@ export default function Team() {
               <TeamGrid members={teamMembers.filter(member => member.category === 'Bureau Exécutif')} />
             </div>
 
-            {/* Chargés de Mission */}
+            {/* Les Chargés */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-8">
                 <UserCheck className="w-8 h-8 text-rose-600" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Chargés de Mission</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Les Chargés</h2>
               </div>
-              <TeamGrid members={teamMembers.filter(member => member.category === 'Chargés de Mission')} />
+              <TeamGrid members={teamMembers.filter(member => member.category === 'Les Chargés')} />
             </div>
 
             {/* Présidents de Commission */}
@@ -257,8 +254,8 @@ export default function Team() {
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Nos Valeurs Collectifs</h2>
               <p className="text-gray-900 text-lg mb-8 leading-relaxed">
-                Chaque membre de l'équipe FILLES+ partage une vision commune : créer un monde où chaque fille 
-                a accès aux opportunités d'éducation, de santé et de leadership qui lui permet de réaliser son plein potentiel.
+                Chaque membre de l&apos;équipe FILLES+ partage une vision commune : créer un monde où chaque fille
+                a accès aux opportunités d&apos;éducation, de santé et de leadership qui lui permet de réaliser son plein potentiel.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div className="stat bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-4">

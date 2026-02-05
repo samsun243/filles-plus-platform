@@ -41,12 +41,12 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
-            <div className="relative w-10 sm:w-12 h-10 sm:h-12 overflow-hidden rounded-xl shadow-sm group-hover:shadow-md transition-all duration-300">
+            <div className="relative w-14 sm:w-16 h-14 sm:h-16 overflow-hidden rounded-lg shadow-sm group-hover:shadow-md transition-all duration-300 bg-white p-1">
               <Image
-                src="/logo.jpg"
+                src="/images/logo_final.png"
                 alt="Logo ONG FILLES+"
                 fill
-                className="object-cover transform group-hover:scale-110 transition-transform duration-500"
+                className="object-contain transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>
             <div className="flex flex-col hidden sm:flex">
