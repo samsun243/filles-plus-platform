@@ -228,7 +228,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Témoignages */}
+        {/* Témoignages 
         <section className="py-24 bg-gradient-to-b from-rose-50 to-white">
           <div className="container mx-auto px-4">
             <FadeInSection>
@@ -267,6 +267,7 @@ export default function Home() {
             </FadeInSection>
           </div>
         </section>
+        */}
 
         {/* Projets en Vedette */}
         <section className="py-20 bg-slate-50">
